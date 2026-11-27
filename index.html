@@ -1,116 +1,532 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080b12"><meta name="description" content="Muhammad Ahsan — web developer and digital creator building immersive websites, browser gaming experiences and AI-powered visual content."><title>Mohammad Ahsan — Developer & Digital Creator</title><link rel="icon" href="favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#080b12;--panel:#101827;--line:#ffffff1c;--text:#f3f6ff;--muted:#9aa8bd;--cyan:#62e7f4;--violet:#a17bff;--d:'Space Grotesk',sans-serif;--m:'DM Mono',monospace;--b:'Manrope',sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--b);overflow-x:hidden;cursor:none}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}body:before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(600px circle at var(--x,50%) var(--y,40%),#4c7de21b,transparent 70%),linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:auto,55px 55px,55px 55px}.cursor,.ring{position:fixed;z-index:200;pointer-events:none;left:0;top:0;transform:translate(-50%,-50%);border-radius:50%}.cursor{width:6px;height:6px;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}.ring{width:34px;height:34px;border:1px solid #62e7f499;transition:.2s}.ring.big{width:58px;height:58px;border-color:var(--violet)}.progress{position:fixed;z-index:300;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--cyan),var(--violet))}.top{position:fixed;z-index:100;top:0;left:0;right:0;padding:17px 0;background:#080b12c9;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{display:flex;justify-content:space-between;align-items:center}.brand{font:700 19px var(--d)}.brand span{color:var(--cyan)}.links{display:flex;gap:23px;align-items:center}.links a{font-size:10px;letter-spacing:1px;text-transform:uppercase;color:#b3bfd1}.links a:hover{color:var(--cyan)}.links .cta{padding:11px 15px;border:1px solid #62e7f466;border-radius:4px;color:var(--cyan)}.menu{display:none;background:none;border:0;color:white;font-size:23px}.hero{min-height:760px;padding:145px 0 80px;display:flex;align-items:center}.heroGrid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:30px}.eyebrow,.kicker{font:10px var(--m);letter-spacing:2px;color:var(--cyan);text-transform:uppercase}.eyebrow:before{content:'✳';color:var(--violet);margin-right:10px}h1{font:700 clamp(54px,7.4vw,94px)/.98 var(--d);letter-spacing:-6px;margin:24px 0}.grad{background:linear-gradient(100deg,#f6f8ff,#74e8f3 52%,#a17bff);color:transparent;background-clip:text;-webkit-background-clip:text}.lead{max-width:560px;color:var(--muted);font-size:15px;line-height:1.95}.lead strong{color:white}.actions{display:flex;gap:13px;margin-top:30px;flex-wrap:wrap}.btn{display:inline-flex;gap:12px;align-items:center;padding:14px 19px;border-radius:4px;font-size:11px;font-weight:800;transition:.25s}.primary{background:linear-gradient(110deg,#65e5ef,#91a6ff);color:#071018}.secondary{border:1px solid var(--line);background:#ffffff05}.btn:hover{transform:translateY(-4px);box-shadow:0 14px 32px #4ba3dc30}.stats{display:flex;gap:25px;margin-top:48px}.stat{border-left:1px solid var(--line);padding-left:13px}.stat b{display:block;font:600 19px var(--d)}.stat span{font:9px var(--m);color:var(--muted)}.visual{height:480px;display:grid;place-items:center;position:relative}.orb{width:min(400px,100%);aspect-ratio:1;position:relative;animation:float 7s ease-in-out infinite}.orb canvas{width:100%;height:100%}.glow{position:absolute;inset:15%;border-radius:50%;background:radial-gradient(circle,#47c8f033,#745eff20,transparent 70%);filter:blur(20px)}.orbit{position:absolute;inset:7%;border:1px solid #67d2f133;border-radius:50%;transform:rotateX(70deg) rotateZ(-25deg);animation:spin 18s linear infinite}.orbit.two{inset:0;border-color:#a17bff33;transform:rotateY(65deg) rotateZ(30deg);animation-direction:reverse;animation-duration:25s}.orbLabel{position:absolute;inset:0;display:grid;place-content:center;text-align:center;pointer-events:none}.orbLabel b{font:700 54px var(--d)}.orbLabel span{font:9px var(--m);letter-spacing:2px;color:var(--cyan)}.chip{position:absolute;padding:11px 14px;background:#0d1422dd;border:1px solid var(--line);border-radius:6px;font:9px var(--m);animation:float 5s infinite}.c1{top:15%;left:0}.c2{right:0;top:34%;animation-delay:-2s}.c3{bottom:14%;left:8%;animation-delay:-3s}@keyframes float{50%{transform:translateY(-13px)}}@keyframes spin{to{transform:rotateX(70deg) rotateZ(335deg)}}section{padding:100px 0}.head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:38px}.head h2{font:600 clamp(36px,5vw,55px)/1.04 var(--d);letter-spacing:-2.5px;margin:12px 0 0}.head p{max-width:390px;color:var(--muted);font-size:12px;line-height:1.9}.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px}.aboutCard{padding:28px;border:1px solid var(--line);border-radius:8px;background:linear-gradient(145deg,#142039,#0a101a)}.num{font:700 86px var(--d);color:transparent;-webkit-text-stroke:1px #67dcef99}.about p{font-size:13px;line-height:1.95;color:var(--muted)}.tags,.pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:20px}.tags span,.pills span{font:9px var(--m);padding:8px 10px;border:1px solid var(--line);border-radius:3px;color:#bdcbe0}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.service{padding:24px;border:1px solid var(--line);border-radius:7px;background:linear-gradient(145deg,#111b2b,#0a101a);min-height:180px;transition:.3s}.service:hover,.project:hover{transform:translateY(-7px);border-color:#62e7f477;box-shadow:0 20px 45px #0005}.ico{font-size:23px;color:var(--cyan);margin-bottom:20px}.service h3,.project h3{font:600 18px var(--d);margin:0 0 9px}.service p,.project p{font-size:11px;line-height:1.85;color:var(--muted)}.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.project{border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#0c121e;transition:.3s}.art{height:195px;display:grid;place-items:center;position:relative;overflow:hidden;background:radial-gradient(circle,#367fc344,transparent 60%),linear-gradient(135deg,#101d30,#090e18)}.art:before,.art:after{content:'';position:absolute;width:240px;height:240px;border:1px solid #65daef33;border-radius:50%;transform:rotateX(65deg) rotateZ(25deg)}.art:after{width:170px;height:170px;border-color:#a17bff44;transform:rotateX(65deg) rotateZ(-30deg)}.art strong{z-index:1;font:700 40px var(--d)}.art small{position:absolute;top:15px;left:16px;font:9px var(--m);color:var(--cyan)}.art em{position:absolute;right:15px;bottom:14px;font:9px var(--m);color:#9eacc0}.igi{background:radial-gradient(circle,#b9955a44,transparent 60%),linear-gradient(135deg,#201b17,#0a1018)}.igi2{background:radial-gradient(circle,#596de655,transparent 60%),linear-gradient(135deg,#121a35,#090e18)}.gta{background:radial-gradient(circle,#5bd6a944,transparent 60%),linear-gradient(135deg,#10251f,#0a1018)}.lab{background:radial-gradient(circle,#ab66ff44,transparent 60%),linear-gradient(135deg,#201333,#0b1018)}.info{padding:20px}.topline,.foot{display:flex;justify-content:space-between;align-items:center;gap:10px}.topline small{font:9px var(--m);color:var(--cyan)}.project p{margin:12px 0}.pills{margin:0}.pills span{font-size:8px;padding:6px 8px}.arrow{width:32px;height:32px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--cyan)}.notice{padding:18px;border:1px solid #a17bff44;background:#a17bff10;border-radius:6px;color:#c5c9dc;font-size:11px;line-height:1.8;margin-bottom:16px}.creative{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.feature{min-height:280px;padding:28px;border:1px solid var(--line);border-radius:8px;background:radial-gradient(circle at 80% 10%,#a17bff33,transparent 40%),#111326;display:flex;flex-direction:column;justify-content:space-between}.feature h3{font:600 29px var(--d)}.feature p,.mini p,.youtube p{font-size:11px;color:var(--muted);line-height:1.9}.side{display:grid;gap:14px}.mini,.youtube{padding:23px;border:1px solid var(--line);border-radius:8px;background:#111827}.mini h4{margin:0;font:600 16px var(--d)}.youtube{display:flex;align-items:center;justify-content:space-between;gap:25px;background:linear-gradient(120deg,#142039,#0c121e)}.youtube h3{font:600 26px var(--d);margin:8px 0}.play{width:68px;height:68px;flex:none;border-radius:18px;display:grid;place-items:center;background:linear-gradient(145deg,#ff6470,#ff3157);font-size:26px}.certs{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.cert{min-height:160px;border:1px dashed #9aabc055;border-radius:8px;display:grid;place-content:center;text-align:center;background:#ffffff04}.cert b{font:600 16px var(--d)}.cert span{font:9px var(--m);color:var(--muted);margin-top:8px}.cert i{font-style:normal;color:var(--cyan);font-size:25px}.contactBox{padding:42px;border:1px solid #62e7f444;border-radius:9px;background:radial-gradient(circle at 90% 5%,#7167ff33,transparent 38%),#0c1320;display:flex;justify-content:space-between;align-items:center;gap:25px}.contactBox h2{font:600 clamp(36px,5vw,55px)/1.05 var(--d);margin:12px 0}.contactBox p{font-size:12px;line-height:1.8;color:var(--muted);max-width:460px}.social{display:grid;gap:12px;min-width:170px}.social a{font:10px var(--m);padding:9px 0;border-bottom:1px solid var(--line)}footer{border-top:1px solid var(--line);padding:25px 0;color:#718096;font:9px var(--m)}.footer{display:flex;justify-content:space-between}.reveal{opacity:0;transform:translateY(25px);transition:.8s}.reveal.show{opacity:1;transform:none}
-@media(max-width:850px){.heroGrid{grid-template-columns:1fr}.visual{height:400px;max-width:500px;margin:auto;width:100%}.about{gap:25px}.services{grid-template-columns:repeat(2,1fr)}.links{gap:12px}.links a{font-size:9px}}@media(max-width:620px){body{cursor:auto}.cursor,.ring{display:none}.wrap{width:calc(100% - 34px)}.menu{display:block}.links{display:none;position:absolute;top:58px;left:17px;right:17px;padding:18px;background:#0d1522;border:1px solid var(--line);border-radius:8px;flex-direction:column;align-items:stretch}.links.open{display:flex}.links a{font-size:11px;padding:7px}.hero{min-height:auto;padding:120px 0 65px}h1{font-size:clamp(49px,14vw,72px);letter-spacing:-4px}.lead{font-size:13px}.stats{gap:15px}.stat b{font-size:16px}.visual{height:330px}.orb{width:315px}section{padding:72px 0}.head{display:block}.head h2{font-size:39px}.head p{margin-top:12px}.about,.projects,.creative{grid-template-columns:1fr}.services{grid-template-columns:1fr}.service{min-height:150px}.youtube{display:block}.play{margin-top:15px;width:55px;height:55px}.certs{grid-template-columns:1fr}.contactBox{display:block;padding:27px 22px}.social{margin-top:20px}.footer{flex-direction:column;gap:10px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f9fc">
+  <meta name="description" content="Mohammad Ahsan is a professional video creator and digital builder creating AI product ads, short-form videos, gaming websites and SEO-focused web experiences.">
+  <title>Mohammad Ahsan | Professional Video Creator</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root{--ink:#15243b;--muted:#61718a;--soft:#f5f8fc;--paper:#fff;--line:#e3eaf3;--blue:#2368d8;--cyan:#12a8b8;--violet:#7659dc;--mint:#e8f8f6;--shadow:0 18px 55px rgba(28,55,92,.09);--radius:22px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
+    body{margin:0;background:var(--soft);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;overflow-x:hidden}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    button{font:inherit}
+    .container{width:min(1160px,calc(100% - 44px));margin-inline:auto}
+    .topbar{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(222,231,242,.9)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}
+    .brand{font-size:20px;font-weight:850;letter-spacing:-.8px;color:var(--ink);white-space:nowrap}
+    .brand span{color:var(--blue)}
+    .navlinks{display:flex;align-items:center;gap:22px}
+    .navlinks a{font-size:12px;font-weight:700;color:#5c6b81;transition:color .2s}
+    .navlinks a:hover{color:var(--blue)}
+    .navsocial{display:flex;align-items:center;gap:9px}
+    .social-pill{border:1px solid var(--line);border-radius:999px;padding:9px 13px;background:#fff;color:#40516b;font-size:11px;font-weight:750;transition:.22s}
+    .social-pill:hover{border-color:#9bb9e7;color:var(--blue);transform:translateY(-2px)}
+    .menu-btn{display:none;border:1px solid var(--line);border-radius:12px;background:#fff;padding:9px 12px;color:var(--ink);font-size:20px}
+    .hero{position:relative;padding:90px 0 92px;background:radial-gradient(ellipse at 80% 20%,#dceaff 0,transparent 36%),radial-gradient(ellipse at 12% 85%,#dcf6f1 0,transparent 32%),linear-gradient(180deg,#fff 0,#f7f9fc 100%);overflow:hidden}
+    .hero:after{content:"";position:absolute;width:360px;height:360px;border:1px solid #c7d9f2;border-radius:50%;right:-140px;top:20px;opacity:.55;box-shadow:0 0 0 35px #dce8f633,0 0 0 75px #dce8f622}
+    .hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:45px}
+    .eyebrow,.kicker{display:inline-flex;align-items:center;gap:9px;color:var(--blue);font-size:11px;font-weight:850;letter-spacing:1.45px;text-transform:uppercase}
+    .eyebrow:before{content:"";width:23px;height:2px;background:linear-gradient(90deg,var(--blue),var(--cyan));border-radius:9px}
+    h1{font-size:clamp(48px,7.6vw,88px);line-height:.99;letter-spacing:-5px;margin:19px 0 17px;font-weight:900}
+    .gradient-text{background:linear-gradient(100deg,#1c5ec7 5%,#13a1b1 70%,#7859db);color:transparent;background-clip:text;-webkit-background-clip:text}
+    .hero-role{font-size:clamp(18px,2.2vw,25px);font-weight:800;letter-spacing:-.5px;margin:0 0 16px;color:#344966}
+    .hero-copy{max-width:600px;color:var(--muted);font-size:15px;line-height:1.9}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:12px;padding:14px 19px;font-size:12px;font-weight:850;transition:transform .22s,box-shadow .22s,background .22s}
+    .btn:hover{transform:translateY(-3px);box-shadow:0 12px 25px rgba(37,93,176,.16)}
+    .btn-primary{color:white;background:linear-gradient(110deg,#2469d7,#168eb6)}
+    .btn-light{background:white;border:1px solid var(--line);color:#435673}
+    .hero-facts{display:flex;gap:22px;flex-wrap:wrap;margin-top:36px}
+    .hero-fact{padding-left:13px;border-left:2px solid #b6d2f2}
+    .hero-fact b{display:block;font-size:15px;font-weight:900}
+    .hero-fact span{display:block;color:#7a899e;font-size:9px;font-weight:800;letter-spacing:1px;text-transform:uppercase;margin-top:3px}
+    .hero-art{height:440px;position:relative;display:grid;place-items:center;perspective:900px}
+    .art-glow{position:absolute;width:310px;height:310px;border-radius:50%;background:radial-gradient(circle,#b4d6ff 0,#d7eafe 42%,transparent 72%);filter:blur(9px)}
+    .art-platform{position:relative;width:310px;height:260px;transform-style:preserve-3d;transform:rotateX(58deg) rotateZ(-28deg);animation:platformFloat 7s ease-in-out infinite}
+    .platform-ring{position:absolute;inset:0;border:2px solid rgba(41,116,205,.34);border-radius:35px;transform:translateZ(-35px);box-shadow:0 0 0 18px rgba(42,117,210,.05),0 0 0 39px rgba(42,117,210,.035)}
+    .platform-card{position:absolute;inset:25px 28px;border-radius:27px;background:linear-gradient(140deg,#fff,#e2efff);border:1px solid #c9dcf4;box-shadow:25px 28px 0 #bfd5f0,45px 50px 50px rgba(30,77,140,.19);transform:translateZ(33px);display:grid;place-items:center;overflow:hidden}
+    .platform-card:before{content:"";position:absolute;inset:17px;border:1px solid #b4cae7;border-radius:18px}
+    .play-symbol{position:relative;z-index:1;width:92px;height:92px;border-radius:27px;background:linear-gradient(145deg,#2b77dd,#13a9b7);box-shadow:0 17px 35px #2469d744;display:grid;place-items:center;color:#fff;font-size:36px;transform:translateZ(36px) rotateZ(28deg)}
+    .art-chip{position:absolute;padding:12px 15px;border:1px solid #dce7f5;border-radius:14px;background:rgba(255,255,255,.9);box-shadow:var(--shadow);font-size:10px;font-weight:850;color:#52637b}
+    .art-chip b{color:var(--blue);margin-right:5px}
+    .chip-one{top:50px;left:10px;animation:float 5s ease-in-out infinite}
+    .chip-two{right:0;top:135px;animation:float 6s ease-in-out infinite -2s}
+    .chip-three{bottom:40px;left:20px;animation:float 5.5s ease-in-out infinite -1s}
+    @keyframes float{50%{transform:translateY(-12px)}}
+    @keyframes platformFloat{50%{transform:rotateX(58deg) rotateZ(-24deg) translateY(-10px)}}
+    .section{padding:88px 0}
+    .section-white{background:#fff}
+    .section-soft{background:#f4f7fb}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:32px}
+    .section-head h2{font-size:clamp(34px,5vw,52px);line-height:1.05;letter-spacing:-2.4px;margin:10px 0 0;font-weight:900}
+    .section-head p{max-width:440px;margin:0;color:var(--muted);font-size:13px;line-height:1.85}
+    .content-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .content-card{position:relative;min-height:278px;padding:23px;border-radius:var(--radius);background:#fff;border:1px solid var(--line);box-shadow:0 12px 38px rgba(36,68,109,.055);overflow:hidden;transition:.3s}
+    .content-card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}
+    .content-visual{height:115px;border-radius:16px;margin-bottom:20px;position:relative;overflow:hidden;background:linear-gradient(135deg,#e7f1ff,#e9fbf8)}
+    .content-visual:before,.content-visual:after{content:"";position:absolute;border-radius:50%;border:1px solid #8bb8e8;transform:rotateX(65deg)}
+    .content-visual:before{width:150px;height:150px;left:22%;top:-34px}
+    .content-visual:after{width:95px;height:95px;left:35%;top:-9px;border-color:#7fcfc8}
+    .content-visual span{position:absolute;z-index:1;left:18px;bottom:14px;font-size:12px;font-weight:900;color:#2860a3;letter-spacing:.5px}
+    .content-visual .visual-icon{position:absolute;right:22px;top:21px;font-size:30px;color:#3a85c8}
+    .content-card h3{font-size:18px;letter-spacing:-.4px;margin:0 0 8px}
+    .content-card p{margin:0;color:var(--muted);font-size:12px;line-height:1.8}
+    .video-status{display:inline-flex;align-items:center;gap:7px;margin-top:17px;padding:7px 10px;border-radius:999px;background:#f0f6ff;color:#3868a5;font-size:9px;font-weight:850;letter-spacing:.6px;text-transform:uppercase}
+    .status-dot{width:7px;height:7px;border-radius:50%;background:#16a6a1;box-shadow:0 0 0 4px #16a6a11c}
+    .video-note{margin-top:18px;padding:17px 20px;border:1px dashed #c6d6e9;border-radius:15px;background:#f9fbfe;display:flex;justify-content:space-between;align-items:center;gap:18px;color:#5d6e86;font-size:12px}
+    .video-note strong{color:var(--ink)}
+    .website-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+    .website-card{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 9px 28px rgba(35,60,96,.055);transition:transform .28s,box-shadow .28s,border-color .28s}
+    .website-card:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:#bfd3f0}
+    .site-image{height:178px;position:relative;overflow:hidden;background:linear-gradient(135deg,#dceafd,#e2f7f2)}
+    .site-image img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+    .website-card:hover .site-image img{transform:scale(1.055)}
+    .site-image:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(15,34,57,.68))}
+    .site-image .site-title{position:absolute;z-index:2;left:16px;bottom:13px;color:#fff;font-size:16px;font-weight:900;letter-spacing:-.3px;text-shadow:0 2px 10px #0008}
+    .site-image.wasm{display:grid;place-items:center;background:radial-gradient(circle at 70% 25%,#d6efff,transparent 42%),linear-gradient(135deg,#dce8fb,#e5f7f3)}
+    .wasm-mark{font-size:52px;font-weight:950;letter-spacing:-5px;color:#3576c7}
+    .site-body{padding:17px 18px 18px}
+    .site-name-line{display:flex;justify-content:space-between;align-items:center;gap:10px}
+    .site-name-line h3{font-size:15px;margin:0;font-weight:900;letter-spacing:-.3px}
+    .site-open{width:30px;height:30px;display:grid;place-items:center;border:1px solid var(--line);border-radius:50%;color:var(--blue);font-weight:900}
+    .site-domain{display:block;color:#78869a;font-size:10px;margin-top:5px;overflow-wrap:anywhere}
+    .site-type{display:inline-block;margin-top:12px;padding:6px 9px;border-radius:7px;background:#f1f6fd;color:#52719b;font-size:9px;font-weight:850;letter-spacing:.55px;text-transform:uppercase}
+    .image-credits{margin:17px 0 0;color:#8290a2;font-size:10px;line-height:1.7}
+    .image-credits a{color:#5276a5;text-decoration:underline;text-underline-offset:2px}
+    .stats-heading{margin:58px 0 21px;display:flex;align-items:end;justify-content:space-between;gap:20px}
+    .stats-heading h3{font-size:26px;letter-spacing:-1px;margin:5px 0 0}
+    .stats-heading p{max-width:430px;margin:0;color:var(--muted);font-size:11px;line-height:1.8}
+    .featured-proof{display:grid;grid-template-columns:.95fr 1.05fr;gap:20px;padding:23px;border:1px solid var(--line);border-radius:22px;background:#fff;box-shadow:0 12px 42px rgba(30,63,103,.06)}
+    .metric-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;align-content:start}
+    .metric{padding:17px 16px;border:1px solid #e5edf6;border-radius:14px;background:#f8fafd}
+    .metric small{display:block;color:#75849a;font-size:9px;font-weight:850;letter-spacing:.8px;text-transform:uppercase}
+    .metric strong{display:block;margin:7px 0 1px;font-size:29px;line-height:1.15;letter-spacing:-1.1px;font-weight:950;color:#1e5cb3}
+    .metric span{display:block;color:#8492a4;font-size:9px}
+    .proof-image{margin:0;align-self:center}
+    .proof-image img{width:100%;height:auto;border:1px solid #e1e8f1;border-radius:11px;background:#f1f4f8}
+    .proof-image figcaption{margin-top:8px;color:#77869b;font-size:10px;line-height:1.6}
+    .other-proofs{display:grid;grid-template-columns:repeat(2,1fr);gap:17px;margin-top:17px}
+    .proof-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:17px;box-shadow:0 8px 25px rgba(35,60,96,.045)}
+    .proof-card h4{font-size:15px;margin:0 0 12px}
+    .proof-card .proof-metrics{display:flex;gap:15px;flex-wrap:wrap;margin-bottom:12px}
+    .proof-card .proof-metrics b{display:block;font-size:16px;color:#1e5cb3}
+    .proof-card .proof-metrics span{display:block;font-size:9px;color:#8492a4}
+    .proof-card img{width:100%;height:auto;border:1px solid #e4eaf2;border-radius:9px}
+    .proof-label{font-size:10px;color:#7d8ba0;line-height:1.7;margin:10px 0 0}
+    .earning-panel{margin-top:19px;padding:22px;border-radius:22px;background:linear-gradient(120deg,#eff7ff,#eefaf8);border:1px solid #dcebf4}
+    .earning-head{display:flex;justify-content:space-between;align-items:start;gap:20px;margin-bottom:17px}
+    .earning-head h3{font-size:24px;letter-spacing:-.8px;margin:0}
+    .earning-head p{font-size:10px;color:#71819a;margin:5px 0 0}
+    .earning-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:18px}
+    .earning-metric{padding:15px;border:1px solid #dce8f2;border-radius:13px;background:rgba(255,255,255,.82)}
+    .earning-metric span{display:block;color:#71819a;font-size:9px;font-weight:850;text-transform:uppercase;letter-spacing:.7px}
+    .earning-metric strong{display:block;margin-top:5px;color:#174f8d;font-size:23px;letter-spacing:-.7px}
+    .monetag-frame{position:relative;border:1px solid #e0e8f1;border-radius:12px;overflow:hidden;background:white}
+    .monetag-frame img{width:100%;height:auto}
+    .monetag-top-mask{position:absolute;inset:0 0 auto;height:8.5%;background:#fff}
+    .monetag-left-mask{position:absolute;left:0;top:8.5%;bottom:0;width:16.2%;background:#fff}
+    .privacy-note{margin:11px 0 0;color:#61758e;font-size:10px;line-height:1.7}
+    .report-link{display:inline-flex;margin-top:12px;color:#215fb5;font-size:10px;font-weight:850;text-decoration:underline;text-underline-offset:3px}
+    .cert-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .cert-card{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#fff;box-shadow:0 10px 34px rgba(35,60,96,.06);transition:.28s}
+    .cert-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+    .cert-image{height:220px;display:grid;place-items:center;padding:13px;background:#f4f7fb;border-bottom:1px solid var(--line)}
+    .cert-image img{width:100%;height:100%;object-fit:contain;background:#fff;border-radius:8px}
+    .cert-copy{padding:19px}
+    .cert-provider{color:var(--blue);font-size:9px;font-weight:900;letter-spacing:.85px;text-transform:uppercase}
+    .cert-copy h3{font-size:16px;line-height:1.38;letter-spacing:-.3px;margin:7px 0}
+    .cert-copy p{color:var(--muted);font-size:11px;line-height:1.8;margin:10px 0 0}
+    .cert-date{font-size:10px;color:#8b98a9;font-weight:750}
+    .skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+    .skill{padding:20px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:0 7px 23px rgba(35,60,96,.04);transition:.22s}
+    .skill:hover{transform:translateY(-4px);border-color:#bfd3f0}
+    .skill-icon{width:36px;height:36px;display:grid;place-items:center;border-radius:11px;background:#eef5ff;color:#2569c1;font-weight:950;font-size:17px}
+    .skill h3{font-size:13px;margin:12px 0 4px}
+    .skill p{margin:0;color:var(--muted);font-size:10px;line-height:1.7}
+    .about-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:35px;align-items:center}
+    .about-stamp{padding:28px;border-radius:21px;background:linear-gradient(145deg,#e7f2ff,#e5f8f4);border:1px solid #dce9f4}
+    .about-stamp .initials{font-size:70px;line-height:1;font-weight:950;letter-spacing:-7px;color:#286cbe}
+    .about-stamp h3{font-size:18px;margin:12px 0 3px}
+    .about-stamp p{font-size:11px;color:#71819a;margin:0}
+    .about-copy p{font-size:13px;color:var(--muted);line-height:2;margin:0 0 13px}
+    .about-highlights{display:flex;gap:9px;flex-wrap:wrap;margin-top:19px}
+    .about-highlights span{padding:8px 11px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:9px;font-weight:800;color:#5a6c84}
+    .contact-card{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:34px;border-radius:23px;background:linear-gradient(110deg,#1d5fb6,#187f9f);color:white;box-shadow:0 18px 50px rgba(24,93,158,.2)}
+    .contact-card h2{font-size:clamp(31px,4.7vw,48px);letter-spacing:-2px;line-height:1.05;margin:8px 0}
+    .contact-card p{color:#e1f1ff;font-size:12px;line-height:1.8;max-width:470px;margin:0}
+    .contact-card .kicker{color:#b8e6f2}
+    .contact-actions{display:flex;flex-direction:column;gap:10px;min-width:180px}
+    .contact-actions .btn{background:white;color:#1d5fb6}
+    .contact-actions .btn.ghost{background:transparent;border:1px solid #ffffff6b;color:#fff}
+    .footer{padding:25px 0;color:#8492a4;font-size:10px}
+    .footer-inner{display:flex;justify-content:space-between;gap:15px;align-items:center}
+    .footer-links{display:flex;gap:16px}
+    .footer a:hover{color:var(--blue)}
+    .cursor-dot,.cursor-ring{position:fixed;left:0;top:0;z-index:999;pointer-events:none;opacity:0;transform:translate(-50%,-50%);border-radius:50%}
+    .cursor-dot{width:7px;height:7px;background:#2368d8;box-shadow:0 0 0 5px #2368d820}
+    .cursor-ring{width:34px;height:34px;border:1.5px solid #2368d8;transition:width .22s,height .22s,border-color .22s,opacity .22s}
+    .cursor-ring.hover{width:52px;height:52px;border-color:#11a4a9;background:#11a4a90d}
+    body.cursor-active{cursor:none}
+    body.cursor-active a,body.cursor-active button{cursor:none}
+    body.cursor-active .cursor-dot,body.cursor-active .cursor-ring{opacity:1}
+    .scroll-line{position:fixed;z-index:150;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,#286bca,#12a8ab,#7659dc)}
+    .js-motion .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+    .js-motion .reveal.is-visible{opacity:1;transform:none}
+    @media(max-width:950px){.navlinks{gap:13px}.navlinks a{font-size:11px}.navsocial{gap:6px}.social-pill{padding:8px 10px}.hero-grid{gap:20px}.website-grid{grid-template-columns:repeat(2,1fr)}.skills-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:720px){.nav{height:68px}.menu-btn{display:block}.navlinks{display:none;position:absolute;top:68px;left:18px;right:18px;padding:18px;background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}.navlinks.open{display:flex}.navlinks a{padding:7px 3px}.navsocial{margin-left:auto}.social-pill{font-size:10px}.hero{padding:66px 0 58px}.hero-grid{grid-template-columns:1fr}.hero-art{height:335px;max-width:500px;width:100%;margin:0 auto}.art-platform{transform:scale(.85) rotateX(58deg) rotateZ(-28deg)}.section{padding:70px 0}.section-head{display:block}.section-head p{margin-top:14px}.content-grid{grid-template-columns:1fr}.content-card{min-height:0}.featured-proof{grid-template-columns:1fr}.other-proofs{grid-template-columns:1fr}.earning-metrics{grid-template-columns:repeat(2,1fr)}.cert-grid{grid-template-columns:1fr}.cert-image{height:260px}.about-grid{grid-template-columns:1fr}.about-stamp{max-width:100%}.contact-card{display:block;padding:27px}.contact-actions{flex-direction:row;flex-wrap:wrap;margin-top:23px}.contact-actions .btn{flex:1}.video-note{display:block}.video-note .btn{margin-top:12px}}
+    @media(max-width:480px){.container{width:calc(100% - 30px)}.brand{font-size:18px}.navsocial .social-pill{padding:7px 9px}.hero h1{font-size:52px;letter-spacing:-3.5px}.hero-copy{font-size:13px}.hero-art{height:290px;overflow:hidden}.art-platform{transform:scale(.72) rotateX(58deg) rotateZ(-28deg)}.art-chip{font-size:9px;padding:9px 11px}.chip-one{left:0;top:24px}.chip-two{right:0;top:112px}.chip-three{left:0;bottom:22px}.hero-facts{gap:13px}.hero-fact{padding-left:9px}.hero-fact b{font-size:13px}.section-head h2{font-size:37px}.website-grid{grid-template-columns:1fr}.site-image{height:190px}.metric strong{font-size:25px}.earning-head{display:block}.earning-metrics{gap:8px}.earning-metric{padding:12px}.earning-metric strong{font-size:20px}.skills-grid{grid-template-columns:1fr 1fr}.skill{padding:15px}.footer-inner{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.js-motion .reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <div class="scroll-line" id="scrollLine"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="#home">MOHAMMAD <span>AHSAN.</span></a>
+      <div class="navsocial">
+        <a class="social-pill" href="https://github.com/developwithAhsan" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="social-pill" href="https://www.youtube.com/@RiyaKiKahaani/shorts" target="_blank" rel="noopener">YouTube ↗</a>
+      </div>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="navlinks" id="navLinks" aria-label="Main navigation">
+        <a href="#content">Content & Ads</a>
+        <a href="#websites">Websites</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-/* Portfolio additions: websites, proof gallery and credentials */
-/* Keep all content readable even if animation scripts or external libraries fail. */
-.reveal{opacity:1;transform:none}
-.proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.proof-card{background:linear-gradient(145deg,#121d2e,#0a101a);border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.proof-card img{display:block;width:100%;height:190px;object-fit:contain;background:#0b111b;padding:8px}
-.proof-card .missing{display:none;height:190px;place-items:center;text-align:center;padding:24px;color:var(--muted);font:10px var(--m);background:linear-gradient(145deg,#16243a,#0a101a)}
-.proof-card img:not([src]){display:none}
-.proof-card .caption{padding:14px 16px}
-.proof-card .caption b{font:600 14px var(--d);display:block}
-.proof-card .caption small{display:block;color:var(--muted);font:9px var(--m);margin-top:7px;line-height:1.7}
-.site-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.site-link{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px;border:1px solid var(--line);border-radius:7px;background:#101827;transition:.25s}
-.site-link:hover{transform:translateY(-4px);border-color:#62e7f477}
-.site-link b{font:600 13px var(--d);display:block}.site-link small{font:9px var(--m);color:var(--muted);display:block;margin-top:6px;overflow-wrap:anywhere}.site-link em{font-style:normal;color:var(--cyan)}
-.proof-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0}
-.proof-stat{padding:18px;border:1px solid var(--line);border-radius:7px;background:#111b2a}
-.proof-stat small{font:9px var(--m);color:var(--muted);text-transform:uppercase;letter-spacing:1px}
-.proof-stat strong{display:block;font:700 clamp(22px,3vw,32px) var(--d);margin:9px 0 4px}
-.proof-stat span{font-size:9px;color:var(--muted)}
-.proof-note{padding:14px 16px;border:1px solid #a17bff44;background:#a17bff0d;border-radius:6px;color:#c2cbe0;font-size:10px;line-height:1.8;margin-top:14px}
-.proof-slider{overflow:hidden;border:1px solid var(--line);border-radius:8px;background:#101827}
-.proof-track{display:flex;transition:transform .55s ease}
-.proof-slide{min-width:100%;padding:18px}
-.proof-slide img{width:100%;height:auto;max-height:280px;object-fit:contain;background:#090e17;border-radius:5px}
-.proof-controls{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
-.proof-controls button{background:#17253a;border:1px solid var(--line);color:var(--cyan);border-radius:4px;padding:9px 13px}
-@media(max-width:800px){.site-grid,.proof-grid{grid-template-columns:repeat(2,1fr)}.proof-stats{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:620px){.site-grid,.proof-grid{grid-template-columns:1fr}.proof-stat{padding:14px}.proof-slide{padding:10px}}
-</style></head><body><div class="progress" id="progress"></div><div class="cursor" id="cursor"></div><div class="ring" id="ring"></div><header class="top" id="top"><div class="wrap nav"><a class="brand" href="#home">MA<span>.</span> / DIGITAL</a><button class="menu" id="menu">☰</button><nav class="links" id="links"><a href="#home">Home</a><a href="#about">About</a><a href="#creative">Content & Ads</a><a href="#sites">Websites</a><a href="#certs">Certificates</a><a href="#services">Skills</a><a href="#work">Projects</a><a href="#youtube">YouTube</a><a class="cta" href="#contact">Let's talk ↗</a></nav></div></header>
-<main>
-<section id="home" class="hero"><div class="wrap heroGrid">
-<div class="heroCopy"><div class="eyebrow">INDEPENDENT DEVELOPER · DIGITAL CREATOR</div>
-<h1>Mohammad<br><span class="grad">Ahsan.</span></h1>
-<p class="lead">I build <strong>digital experiences</strong>, browser-based gaming projects and AI-powered visual stories. From websites and SEO to creative ads and cinematic storytelling, I turn ambitious ideas into things people can explore.</p>
-<div class="actions"><a class="btn primary" href="#sites">Explore my websites ↗</a><a class="btn secondary" href="#contact">Let's collaborate</a></div>
-<div class="stats"><div class="stat"><b>Web</b><span>DEVELOPMENT</span></div><div class="stat"><b>AI</b><span>VIDEO & ADS</span></div><div class="stat"><b>SEO</b><span>GROWTH</span></div></div></div>
-<div class="visual"><div class="orb"><canvas id="orb"></canvas><div class="glow"></div></div><div class="floatCard cardOne"><b>01 / BUILD</b><span>Web experiences</span></div><div class="floatCard cardTwo"><b>02 / CREATE</b><span>AI-powered stories</span></div></div>
-</div></section>
-<section id="about"><div class="wrap"><div class="head reveal"><div class="kicker">01 / A little about me</div><h2>Curiosity drives.<br><span class="grad">Creation follows.</span></h2></div><div class="about"><div class="aboutCard reveal"><div class="num">01</div><h3>Build with purpose.</h3><p>From the first sketch to the final interaction, I focus on making digital products feel considered, useful and memorable.</p></div><div class="reveal"><p>I'm Mohammad Ahsan, an independent web developer and digital creator from Pakistan. My work spans website development, browser gaming projects, creative experiments and AI-assisted video production.</p><p>I like taking on challenging ideas — especially projects that need both technical problem-solving and a strong visual identity. I keep learning, testing and refining until the experience feels right.</p><div class="tags"><span>FRONT-END DEVELOPMENT</span><span>RESPONSIVE UI</span><span>WEB PERFORMANCE</span><span>INTERACTIVE DESIGN</span><span>AI VIDEO CREATION</span><span>STORYTELLING</span><span>GAME WEB EXPERIENCES</span><span>CREATIVE DIRECTION</span></div></div></div></div></section>
-<section id="creative"><div class="wrap"><div class="head reveal"><div class="kicker">02 / Content creation & AI ad studio</div><h2>Product stories.<br><span class="grad">Made to convert.</span></h2></div>
-<div class="notice reveal"><b>Client work & confidentiality:</b> Some ads and promotional videos were made for clients and are private. I only show personal experiments or work that is cleared for public display. New ad videos can be added here as they are ready.</div>
-<div class="creative"><div class="feature reveal"><div><div class="kicker">AI UGC · PRODUCT ADS · SHORT-FORM VIDEO</div><h3>From product idea to a complete AI-powered ad.</h3><p>I develop ad concepts, hooks, scripts, scene direction and AI-generated visuals for product-focused short videos. The goal is to make a product feel clear, memorable and engaging in the first few seconds.</p></div><a class="btn secondary" href="https://www.youtube.com/@RiyaKiKahaani/shorts" target="_blank" rel="noopener">Watch my video storytelling ↗</a></div>
-<div class="side"><div class="mini reveal"><h4>UGC-style ad concepts</h4><p>Creator-style product presentation, relatable scenes and natural-feeling visual storytelling.</p></div><div class="mini reveal"><h4>AI production workflow</h4><p>Concept → hook → script → visual prompts → generated scenes → edit-ready short-form ad.</p></div><div class="mini reveal"><h4>Storytelling & direction</h4><p>Character consistency, dialogue, cinematic shots and emotion-led storytelling across clips.</p></div></div></div>
-<div class="proof-note reveal" style="margin-top:18px">Video showcase area: upcoming public-safe AI product ads will be embedded here. Client-owned/private videos will not be published without permission.</div>
-</div></section>
-<section id="sites"><div class="wrap">
-<div class="head reveal"><div class="kicker">03 / Websites & performance</div><h2>Websites I've<br><span class="grad">built & grown.</span></h2></div>
-<p class="lead reveal">Explore my web projects alongside real search-performance and monetization snapshots. Metrics are shown as supplied in the uploaded reports.</p>
-<div class="site-grid reveal">
-<a class="site-link" href="https://gtabrowser.com/" target="_blank" rel="noopener"><span><b>GTA Browser</b><small>gtabrowser.com</small></span><em>↗</em></a>
-<a class="site-link" href="https://playgtav.vercel.app/" target="_blank" rel="noopener"><span><b>GTA V Online</b><small>playgtav.vercel.app</small></span><em>↗</em></a>
-<a class="site-link" href="https://project-igi.online/" target="_blank" rel="noopener"><span><b>Project IGI Online</b><small>project-igi.online</small></span><em>↗</em></a>
-<a class="site-link" href="https://igi2.online/" target="_blank" rel="noopener"><span><b>IGI2 Online</b><small>igi2.online</small></span><em>↗</em></a>
-<a class="site-link" href="https://gta3online.vercel.app/" target="_blank" rel="noopener"><span><b>GTA III Online</b><small>gta3online.vercel.app</small></span><em>↗</em></a>
-<a class="site-link" href="https://gta3browser.vercel.app/" target="_blank" rel="noopener"><span><b>GTA3 Browser</b><small>gta3browser.vercel.app</small></span><em>↗</em></a>
-<a class="site-link" href="https://vicecityonline.vercel.app/" target="_blank" rel="noopener"><span><b>Vice City Online</b><small>vicecityonline.vercel.app</small></span><em>↗</em></a>
-<a class="site-link" href="https://wasmpc.vercel.app/" target="_blank" rel="noopener"><span><b>WASM PC</b><small>wasmpc.vercel.app</small></span><em>↗</em></a>
-<a class="site-link" href="https://playgta5.site/" target="_blank" rel="noopener"><span><b>Play GTA 5</b><small>playgta5.site</small></span><em>↗</em></a>
-</div>
-<div class="head reveal" style="margin-top:58px"><div class="kicker">Google Search Console · Play GTA V</div><h2>Search performance.</h2></div>
-<div class="proof-stats reveal">
-<div class="proof-stat"><small>Total clicks</small><strong>243K</strong><span>GSC screenshot · 8 Oct–25 Nov 2026</span></div>
-<div class="proof-stat"><small>Impressions</small><strong>1.13M</strong><span>Search appearances</span></div>
-<div class="proof-stat"><small>Average CTR</small><strong>21.5%</strong><span>Click-through rate</span></div>
-<div class="proof-stat"><small>Average position</small><strong>6.5</strong><span>Average search position</span></div>
-</div>
-<p class="proof-note reveal">The uploaded Search Console ZIP is for playgtav.vercel.app and its Pages.csv records 241,987 clicks and 1,096,726 impressions for the homepage. The rounded totals above match the supplied Search Console overview screenshot.</p>
-<div class="proof-grid reveal">
-<article class="proof-card"><a href="https://raw.githubusercontent.com/developwithAhsan/MuhammadAhsan/main/data/Screenshot%202026-11-27%208.07.59%20PM.png" target="_blank"><img loading="lazy" src="data/Screenshot%202026-11-27%208.07.59%20PM.png" alt="Google Search Console overview showing 243 thousand clicks and 1.13 million impressions"></a><div class="caption"><b>Play GTA V · Search Console overview</b><small>243K clicks · 1.13M impressions · 21.5% CTR · Avg. position 6.5</small></div></article>
-<article class="proof-card"><a href="https://raw.githubusercontent.com/developwithAhsan/MuhammadAhsan/main/data/Screenshot%202026-11-27%208.08.17%20PM.png" target="_blank"><img loading="lazy" src="data/Screenshot%202026-11-27%208.08.17%20PM.png" alt="Google Search Console performance screenshot showing 3.31 thousand clicks"></a><div class="caption"><b>Search Console · Performance snapshot</b><small>3.31K clicks · 12.6K impressions · 26.3% CTR · Avg. position 7.9</small></div></article>
-<article class="proof-card"><a href="https://raw.githubusercontent.com/developwithAhsan/MuhammadAhsan/main/data/Screenshot%202026-11-27%208.10.27%20PM.png" target="_blank"><img loading="lazy" src="data/Screenshot%202026-11-27%208.10.27%20PM.png" alt="Google Search Console performance screenshot showing 218 clicks"></a><div class="caption"><b>Search Console · Performance snapshot</b><small>218 clicks · 1.35K impressions · 16.2% CTR · Avg. position 8.5</small></div></article>
-</div>
-<div class="head reveal" style="margin-top:54px"><div class="kicker">Monetag · Uploaded earnings report</div><h2>Monetization snapshot.</h2></div>
-<div class="proof-stats reveal">
-<div class="proof-stat"><small>Ad impressions</small><strong>613,353</strong><span>32 daily rows in stats.csv</span></div>
-<div class="proof-stat"><small>Reported profit</small><strong>$472.159</strong><span>CSV total · rounded $472.16</span></div>
-<div class="proof-stat"><small>Average CPM</small><strong>$0.7698</strong><span>CSV total · rounded $0.77</span></div>
-<div class="proof-stat"><small>Best earning day</small><strong>$29.659</strong><span>7 November 2026</span></div>
-</div>
-<div class="proof-grid reveal"><article class="proof-card"><a href="https://raw.githubusercontent.com/developwithAhsan/MuhammadAhsan/main/data/Screenshot%202026-11-27%208.16.10%20PM.png" target="_blank"><img loading="lazy" src="data/Screenshot%202026-11-27%208.16.10%20PM.png" alt="Monetag statistics dashboard showing daily impressions, profit and CPM"></a><div class="caption"><b>Monetag · Daily statistics</b><small>Impressions, reported profit and CPM from the supplied dashboard screenshot</small></div></article></div>
-<p class="proof-note reveal">The uploaded CSV contains daily impression, profit and CPM records. Private account identifiers, manager details, payment information and login data are intentionally not displayed. Google AdSense approval is listed as a professional milestone, not as account-access information.</p>
-<div class="head reveal" style="margin-top:48px"><div class="kicker">Inside the Search Console export</div><h2>Top organic search results.</h2></div>
-<div class="proof-stats reveal">
-<div class="proof-stat"><small>Top query</small><strong style="font-size:20px">gta 5 online</strong><span>34,571 clicks · 127,563 impressions</span></div>
-<div class="proof-stat"><small>Second query</small><strong style="font-size:20px">gta v online</strong><span>16,315 clicks · 46,963 impressions</span></div>
-<div class="proof-stat"><small>Top landing page</small><strong style="font-size:20px">Homepage</strong><span>241,987 clicks · 1,096,726 impressions</span></div>
-<div class="proof-stat"><small>Device with most clicks</small><strong style="font-size:20px">Desktop</strong><span>146,023 clicks in the export</span></div>
-</div>
-<div class="head reveal" style="margin-top:54px"><div class="kicker">Downloadable source reports</div><h2>Explore the data.</h2></div>
-<div class="site-grid reveal">
-<a class="site-link" href="data/https___playgtav.vercel.app_-Performance-on-Search-2026-11-27.zip" download><span><b>Google Search Console export</b><small>ZIP · Queries, pages, countries, devices and chart data</small></span><em>↓</em></a>
-<a class="site-link" href="data/stats.csv" download><span><b>Monetag daily statistics</b><small>CSV · Daily impressions, profit and CPM</small></span><em>↓</em></a>
-</div>
-</div></section>
-<section id="certs"><div class="wrap"><div class="head reveal"><div class="kicker">05 / Certificates & learning</div><h2>Skills backed<br><span class="grad">by learning.</span></h2></div>
-<p class="lead reveal">Three completed courses that reflect my interest in AI, prompt engineering and search growth.</p>
-<div class="proof-grid reveal">
-<article class="proof-card"><a href="data/1789883946042.jpeg" target="_blank"><img loading="lazy" src="data/1789883946042.jpeg" alt="Microsoft and Simplilearn SkillUp certificate for Introduction to Prompt Engineering with GitHub Copilot"></a><div class="caption"><b>Introduction to Prompt Engineering with GitHub Copilot</b><small>Microsoft · Simplilearn SkillUp · 19 September 2026</small><p>Course completion covering prompt engineering concepts and using GitHub Copilot more effectively. This supports my AI-assisted development workflow and ability to shape clearer instructions for coding tools.</p></div></article>
-<article class="proof-card"><a href="data/1746884924245.jpeg" target="_blank"><img loading="lazy" src="data/1746884924245.jpeg" alt="HP LIFE and HP Foundation certificate for AI for Beginners"></a><div class="caption"><b>AI for Beginners</b><small>HP LIFE · HP Foundation · 5 October 2025</small><p>An introductory course covering core AI concepts, practical applications, the role of data, business use cases and ethical considerations. It complements my work creating AI-assisted videos and creative content.</p></div></article>
-<article class="proof-card"><a href="data/1790072481839.jpeg" target="_blank"><img loading="lazy" src="data/1790072481839.jpeg" alt="Simplilearn SkillUp certificate for Introduction to SEO"></a><div class="caption"><b>Introduction to SEO</b><small>Simplilearn SkillUp · 20 September 2026</small><p>A foundation in search engine optimization. I apply this learning while improving website structure, content discoverability and organic search performance across my web projects.</p></div></article>
-</div><p class="proof-note">Certificate names, providers and dates above are transcribed from the certificate images. Course descriptions summarize the visible certificate text and its stated learning topics.</p>
-</div></section>
-<section id="services"><div class="wrap"><div class="head reveal"><div class="kicker">02 / What I do</div><h2>Skills that turn<br><span class="grad">ideas into reality.</span></h2></div><div class="services"><article class="service reveal"><div class="ico">⌘</div><h3>Web Development</h3><p>Modern responsive websites with thoughtful layouts, clean interactions and performance-conscious implementation.</p></article><article class="service reveal"><div class="ico">◉</div><h3>Interactive Experiences</h3><p>Engaging browser experiences, custom interfaces, motion details and immersive visual elements.</p></article><article class="service reveal"><div class="ico">✳</div><h3>AI Video & Ads</h3><p>AI-assisted creative concepts, promotional videos and visual storytelling for digital campaigns.</p></article><article class="service reveal"><div class="ico">◇</div><h3>Creative Direction</h3><p>Visual identity, content structure and design decisions that help a digital product feel cohesive.</p></article><article class="service reveal"><div class="ico">▣</div><h3>Gaming Web Projects</h3><p>Web-based gaming portals and experiments focused on making classic experiences more accessible.</p></article><article class="service reveal"><div class="ico">↗</div><h3>Digital Content</h3><p>Short-form video concepts, storytelling and content presentation for online audiences.</p></article></div></div></section>
-<section id="work"><div class="wrap"><div class="head reveal"><div class="kicker">03 / Selected work</div><h2>Projects with a<br><span class="grad">purpose to play.</span></h2></div><div class="projects"><article class="project reveal"><div class="art igi"><small>BROWSER GAMING / 01</small><strong>PROJECT IGI</strong><em>TACTICAL CLASSIC · WEB</em></div><div class="info"><div class="topline"><h3>Project IGI Online</h3><small>01</small></div><p>A browser-focused project exploring how a classic PC gaming experience can be brought to the web.</p><div class="foot"><div class="pills"><span>WEB GAMING</span><span>GAME UX</span></div><a class="arrow" href="https://project-igi.online/" target="_blank">↗</a></div></div></article><article class="project reveal"><div class="art igi2"><small>WEB EXPERIENCE / 02</small><strong>IGI<span class="grad">2</span></strong><em>NEXT-GEN BROWSER PROJECT</em></div><div class="info"><div class="topline"><h3>IGI2 Online</h3><small>02</small></div><p>A next-step browser gaming project focused on immersive presentation, loading experience and game delivery.</p><div class="foot"><div class="pills"><span>INTERACTIVE WEB</span><span>GAMING</span></div><a class="arrow" href="https://igi2.online/" target="_blank">↗</a></div></div></article><article class="project reveal"><div class="art gta"><small>GAMING PLATFORM / 03</small><strong>GTA WEB</strong><em>CLASSIC WORLDS · BROWSER</em></div><div class="info"><div class="topline"><h3>GTA Browser Projects</h3><small>03</small></div><p>A collection of browser gaming experiments inspired by bringing open-world titles to accessible web experiences.</p><div class="foot"><div class="pills"><span>GAME PORTALS</span><span>WEB UX</span></div><a class="arrow" href="https://gtabrowser.com/" target="_blank">↗</a></div></div></article><article class="project reveal"><div class="art lab"><small>CREATIVE TECHNOLOGY / 04</small><strong>IDEA LAB</strong><em>AI · MOTION · STORY</em></div><div class="info"><div class="topline"><h3>AI Creative Experiments</h3><small>04</small></div><p>Personal experiments exploring AI-assisted visuals, short-form storytelling, motion concepts and digital ads.</p><div class="foot"><div class="pills"><span>AI CREATIVE</span><span>VIDEO</span></div><a class="arrow" href="#creative">↗</a></div></div></article></div></div></section>
-<section id="youtube"><div class="wrap"><div class="head reveal"><div class="kicker">05 / Video channel</div><h2>Stories made<br><span class="grad">for the scroll.</span></h2></div><div class="youtube reveal"><div><div class="kicker">YOUTUBE / SHORTS</div><h3>Riya Ki Kahaani</h3><p>Explore the channel's Shorts, stories and creative video uploads. Open the channel to see the latest videos and the full collection.</p><a class="btn primary" href="https://www.youtube.com/@RiyaKiKahaani/shorts" target="_blank">Explore YouTube Shorts ↗</a></div><div class="play">▶</div></div></div></section>
-<section id="contact"><div class="wrap"><div class="contactBox reveal"><div><div class="kicker">07 / Have an idea?</div><h2>Let's make<br><span class="grad">something matter.</span></h2><p>Have a website idea, a creative project or a collaboration in mind? I'd love to hear what you're building.</p><a class="btn primary" href="https://github.com/developwithAhsan">Connect on GitHub ↗</a></div><div class="social"><a href="https://github.com/developwithAhsan" target="_blank">GITHUB ↗</a><a href="https://www.youtube.com/@RiyaKiKahaani/shorts" target="_blank">YOUTUBE ↗</a><a href="https://project-igi.online/" target="_blank">PROJECT IGI ↗</a><a href="https://igi2.online/" target="_blank">IGI2 ONLINE ↗</a></div></div></div></section></main><footer><div class="wrap footer"><span>© <span id="year"></span> MOHAMMAD AHSAN. BUILT WITH INTENTION.</span><span>DESIGNED TO <a href="#home">MOVE ↑</a></span></div></footer>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r152/three.min.js"></script><script>
-(()=>{const $=s=>document.querySelector(s),top=$('#top'),bar=$('#progress'),cur=$('#cursor'),ring=$('#ring');$('#year').textContent=new Date().getFullYear();addEventListener('scroll',()=>{top.classList.toggle('scrolled',scrollY>25);bar.style.width=(scrollY/(document.documentElement.scrollHeight-innerHeight)*100)+'%'});$('#menu').onclick=()=>$('#links').classList.toggle('open');document.querySelectorAll('#links a').forEach(a=>a.onclick=()=>$('#links').classList.remove('open'));if(matchMedia('(pointer:fine)').matches){addEventListener('pointermove',e=>{document.documentElement.style.setProperty('--x',e.clientX+'px');document.documentElement.style.setProperty('--y',e.clientY+'px');cur.style.left=ring.style.left=e.clientX+'px';cur.style.top=ring.style.top=e.clientY+'px'});document.querySelectorAll('a,button,.project,.service').forEach(e=>{e.onmouseenter=()=>ring.classList.add('big');e.onmouseleave=()=>ring.classList.remove('big')})}const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.reveal').forEach(e=>io.observe(e));document.querySelectorAll('.project').forEach(c=>{c.onpointermove=e=>{if(innerWidth<700)return;let r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform=`perspective(900px) rotateY(${x*5}deg) rotateX(${-y*4}deg) translateY(-5px)`};c.onpointerleave=()=>c.style.transform=''});\nconst track=$('#proofTrack'),count=$('#proofCount');if(track){let idx=0,total=track.children.length;const draw=()=>{track.style.transform='translateX(-'+idx*100+'%)';count.textContent=String(idx+1).padStart(2,'0')+' / '+String(total).padStart(2,'0')};$('#proofNext').onclick=()=>{idx=(idx+1)%total;draw()};$('#proofPrev').onclick=()=>{idx=(idx+total-1)%total;draw()};let timer=setInterval(()=>{idx=(idx+1)%total;draw()},6500);$('#proofSlider').addEventListener('mouseenter',()=>clearInterval(timer),{once:true})};const cv=$('#orb');if(window.THREE&&cv){try{const R=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true}),S=new THREE.Scene(),C=new THREE.PerspectiveCamera(42,1,.1,100),G=new THREE.Group();C.position.z=7;S.add(G);R.setPixelRatio(Math.min(devicePixelRatio,2));let n=1600,p=new Float32Array(n*3);for(let i=0;i<n;i++){let u=Math.random(),v=Math.random(),t=2*Math.PI*u,f=Math.acos(2*v-1),r=1.7;p.set([r*Math.sin(f)*Math.cos(t),r*Math.cos(f),r*Math.sin(f)*Math.sin(t)],i*3)}let geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.BufferAttribute(p,3));G.add(new THREE.Points(geo,new THREE.PointsMaterial({color:0x72dff2,size:.02,transparent:true,opacity:.85,blending:THREE.AdditiveBlending,depthWrite:false})));G.add(new THREE.Mesh(new THREE.IcosahedronGeometry(1.65,2),new THREE.MeshBasicMaterial({color:0x6a8cff,wireframe:true,transparent:true,opacity:.1})));let resize=()=>{let w=cv.clientWidth,h=cv.clientHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix()};new ResizeObserver(resize).observe(cv);resize();let tx=0,ty=0;addEventListener('pointermove',e=>{tx=(e.clientX/innerWidth-.5)*.35;ty=(e.clientY/innerHeight-.5)*.25});function tick(){requestAnimationFrame(tick);G.rotation.y+=(tx-G.rotation.y)*.025+.0015;G.rotation.x+=(ty-G.rotation.x)*.025;R.render(S,C)}tick()}catch(e){cv.style.display='none'}}})();
-</script></body></html>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="eyebrow">CREATIVE WORK · DIGITAL PROJECTS</div>
+          <h1>Mohammad<br><span class="gradient-text">Ahsan.</span></h1>
+          <p class="hero-role">Professional Video Creator</p>
+          <p class="hero-copy">I create AI-powered product ads, short videos and visual stories. I also build gaming websites and grow them with design, SEO and smart digital tools.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#content">Explore My Work <span>↗</span></a>
+            <a class="btn btn-light" href="#contact">Hire Me</a>
+          </div>
+          <div class="hero-facts">
+            <div class="hero-fact"><b>AI Ads</b><span>Video Creation</span></div>
+            <div class="hero-fact"><b>Websites</b><span>Build & Manage</span></div>
+            <div class="hero-fact"><b>SEO</b><span>Organic Growth</span></div>
+          </div>
+        </div>
+        <div class="hero-art reveal" aria-label="Animated creative technology illustration">
+          <div class="art-glow"></div>
+          <div class="art-platform">
+            <div class="platform-ring"></div>
+            <div class="platform-card"><div class="play-symbol">▶</div></div>
+          </div>
+          <div class="art-chip chip-one"><b>01</b> CREATE</div>
+          <div class="art-chip chip-two"><b>02</b> BUILD</div>
+          <div class="art-chip chip-three"><b>03</b> GROW</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-white" id="content">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="kicker">01 / Content creation</div><h2>Ideas into videos.<br><span class="gradient-text">Stories into ads.</span></h2></div>
+          <p>I create short-form videos and AI-assisted product ads with clear ideas, strong hooks and simple storytelling.</p>
+        </div>
+        <div class="content-grid">
+          <article class="content-card reveal tilt-card">
+            <div class="content-visual"><span>AI PRODUCT ADS</span><div class="visual-icon">✦</div></div>
+            <h3>AI Product Advertisements</h3>
+            <p>Product-focused ads made with AI visuals, scripts, scene direction and editing ideas.</p>
+            <span class="video-status"><i class="status-dot"></i> New samples coming soon</span>
+          </article>
+          <article class="content-card reveal tilt-card">
+            <div class="content-visual" style="background:linear-gradient(135deg,#f1eaff,#e8f4ff)"><span>UGC-STYLE CONTENT</span><div class="visual-icon" style="color:#7659dc">◉</div></div>
+            <h3>UGC-Style Videos</h3>
+            <p>Creator-style product stories designed to feel natural, clear and engaging.</p>
+            <span class="video-status"><i class="status-dot"></i> Video showcase ready</span>
+          </article>
+          <article class="content-card reveal tilt-card">
+            <div class="content-visual" style="background:linear-gradient(135deg,#e9f8f4,#e9efff)"><span>STORYTELLING</span><div class="visual-icon" style="color:#129b91">▶</div></div>
+            <h3>Stories & Short Videos</h3>
+            <p>Character-based stories, scripts, dialogues and scene-by-scene AI video direction.</p>
+            <span class="video-status"><i class="status-dot"></i> More videos will be added</span>
+          </article>
+        </div>
+        <div class="video-note reveal">
+          <div><strong>Video portfolio updates are coming.</strong><br>My personal ad videos and selected public-safe samples will appear here. Private client projects stay private.</div>
+          <a class="btn btn-light" href="https://www.youtube.com/@RiyaKiKahaani/shorts" target="_blank" rel="noopener">Watch YouTube Shorts ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="websites">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="kicker">02 / Websites & digital projects</div><h2>Websites I<br><span class="gradient-text">build and manage.</span></h2></div>
+          <p>Gaming websites and browser-based projects. Open any project to visit its website.</p>
+        </div>
+        <div class="website-grid">
+          <a class="website-card reveal tilt-card" href="https://project-igi.online/" target="_blank" rel="noopener">
+            <div class="site-image"><img loading="lazy" src="https://imag.malavida.com/mvimgbig/download-fs/project-igi-22456-6.jpg" alt="Project IGI gameplay thumbnail" onerror="this.style.opacity='0'"><span class="site-title">Project IGI Online</span></div>
+            <div class="site-body"><div class="site-name-line"><h3>Project IGI Online</h3><span class="site-open">↗</span></div><span class="site-domain">project-igi.online</span><span class="site-type">Classic tactical game</span></div>
+          </a>
+          <a class="website-card reveal tilt-card" href="https://igi2.online/" target="_blank" rel="noopener">
+            <div class="site-image"><img loading="lazy" src="https://media.moddb.com/images/games/1/52/51351/3.jpg" alt="IGI 2 Covert Strike gameplay thumbnail" onerror="this.style.opacity='0'"><span class="site-title">IGI2 Online</span></div>
+            <div class="site-body"><div class="site-name-line"><h3>IGI2 Online</h3><span class="site-open">↗</span></div><span class="site-domain">igi2.online</span><span class="site-type">Browser gaming project</span></div>
+          </a>
+          <a class="website-card reveal tilt-card" href="https://gtabrowser.com/" target="_blank" rel="noopener">
+            <div class="site-image"><img loading="lazy" src="https://gaming-cdn.com/images/products/351/screenshot/grand-theft-auto-iii-pc-mac-juego-steam-europe-wallpaper-1.jpg?v=1742305066" alt="Grand Theft Auto III gameplay thumbnail" onerror="this.style.opacity='0'"><span class="site-title">GTA Browser</span></div>
+            <div class="site-body"><div class="site-name-line"><h3>GTA Browser</h3><span class="site-open">↗</span></div><span class="site-domain">gtabrowser.com</span><span class="site-type">Browser game platform</span></div>
+          </a>
+          <a class="website-card reveal tilt-card" href="https://playgtav.vercel.app/" target="_blank" rel="noopener">
+            <div class="site-image"><img loading="lazy" src="https://cdn.mos.cms.futurecdn.net/AQw34cg4TbtrUEA6MJ9a3d-1280-80.jpg" alt="Grand Theft Auto V gameplay thumbnail" onerror="this.style.opacity='0'"><span class="site-title">GTA V Online</span></div>
+            <div class="site-body"><div class="site-name-line"><h3>GTA V Online</h3><span class="site-open">↗</span></div><span class="site-domain">playgtav.vercel.app</span><span class="site-type">Search performance highlight</span></div>
+          </a>
+          <a class="website-card reveal tilt-card" href="https://playgta5.site/" target="_blank" rel="noopener">
+            <div class="site-image"><img loading="lazy" src="https://cdn.mos.cms.futurecdn.net/AQw34cg4TbtrUEA6MJ9a3d-1280-80.jpg" alt="GTA 5 open-world gameplay thumbnail" onerror="this.style.opacity='0'"><span class="site-title">Play GTA 5</span></div>
+            <div class="site-body"><div class="site-name-line"><h3>Play GTA 5</h3><span class="site-open">↗</span></div><span class="site-domain">playgta5.site</span><span class="site-type">Gaming website</span></div>
+          </a>
+          <a class="website-card reveal tilt-card" href="https://gta3online.vercel.app/" target="_blank" rel="noopener">
+            <div class="site-image"><img loading="lazy" src="https://www.gamereactor.eu/media/17/_4431723.png" alt="Grand Theft Auto III gameplay thumbnail" onerror="this.style.opacity='0'"><span class="site-title">GTA III Online</span></div>
+            <div class="site-body"><div class="site-name-line"><h3>GTA III Online</h3><span class="site-open">↗</span></div><span class="site-domain">gta3online.vercel.app</span><span class="site-type">Classic open-world game</span></div>
+          </a>
+          <a class="website-card reveal tilt-card" href="https://gta3browser.vercel.app/" target="_blank" rel="noopener">
+            <div class="site-image"><img loading="lazy" src="https://m.media-amazon.com/images/M/MV5BM2Y4OWY3YjctMTdjMy00ZDY1LThiNGItYzViMDUxOTg1ZWZkXkEyXkFqcGc%40._V1_.jpg" alt="Grand Theft Auto III city gameplay thumbnail" onerror="this.style.opacity='0'"><span class="site-title">GTA3 Browser</span></div>
+            <div class="site-body"><div class="site-name-line"><h3>GTA3 Browser</h3><span class="site-open">↗</span></div><span class="site-domain">gta3browser.vercel.app</span><span class="site-type">Browser game experiment</span></div>
+          </a>
+          <a class="website-card reveal tilt-card" href="https://vicecityonline.vercel.app/" target="_blank" rel="noopener">
+            <div class="site-image"><img loading="lazy" src="https://cdn.ligadosgames.com/imagens/jogos-pc-fraco-que-rodam-em-qualquer-pc-og.jpg?class=ogImageWide" alt="Grand Theft Auto Vice City gameplay thumbnail" onerror="this.style.opacity='0'"><span class="site-title">Vice City Online</span></div>
+            <div class="site-body"><div class="site-name-line"><h3>Vice City Online</h3><span class="site-open">↗</span></div><span class="site-domain">vicecityonline.vercel.app</span><span class="site-type">Open-world game project</span></div>
+          </a>
+          <a class="website-card reveal tilt-card" href="https://wasmpc.vercel.app/" target="_blank" rel="noopener">
+            <div class="site-image wasm"><div class="wasm-mark">WASM</div><span class="site-title">WASM PC</span></div>
+            <div class="site-body"><div class="site-name-line"><h3>WASM PC</h3><span class="site-open">↗</span></div><span class="site-domain">wasmpc.vercel.app</span><span class="site-type">Web technology project</span></div>
+          </a>
+        </div>
+        <p class="image-credits reveal">Game images are reference thumbnails, not screenshots of the websites themselves. Credits: <a href="https://www.malavida.com/en/soft/project-igi/" target="_blank" rel="noopener">Malavida</a>, <a href="https://www.moddb.com/games/igi-2-covert-strike/images/image-3" target="_blank" rel="noopener">ModDB</a>, <a href="https://www.ligadosgames.com/" target="_blank" rel="noopener">Liga dos Games</a>, <a href="https://www.t3.com/reviews/grand-theft-auto-v-review-ps5" target="_blank" rel="noopener">T3</a> and <a href="https://www.instant-gaming.com/" target="_blank" rel="noopener">Instant Gaming</a>. Game names and trademarks belong to their respective owners.</p>
+
+        <div class="stats-heading reveal">
+          <div><div class="kicker">Website analytics</div><h3>Real performance snapshots</h3></div>
+          <p>Figures below are taken from the Search Console screenshots and reports uploaded to the repository.</p>
+        </div>
+        <div class="featured-proof reveal">
+          <div class="metric-grid">
+            <div class="metric"><small>Total clicks</small><strong>243K</strong><span>8 Oct – 25 Nov 2026</span></div>
+            <div class="metric"><small>Impressions</small><strong>1.13M</strong><span>Google Search</span></div>
+            <div class="metric"><small>Average CTR</small><strong>21.5%</strong><span>Click-through rate</span></div>
+            <div class="metric"><small>Average position</small><strong>6.5</strong><span>Search results</span></div>
+          </div>
+          <figure class="proof-image">
+            <img loading="lazy" src="data/Screenshot%202026-11-27%208.07.59%20PM.png" alt="Google Search Console screenshot with 243 thousand clicks and 1.13 million impressions">
+            <figcaption><strong>Play GTA V</strong> · Search Console overview screenshot from the uploaded report.</figcaption>
+          </figure>
+        </div>
+        <div class="other-proofs">
+          <article class="proof-card reveal">
+            <h4>Additional Search Console snapshot</h4>
+            <div class="proof-metrics"><div><b>3.31K</b><span>Clicks</span></div><div><b>12.6K</b><span>Impressions</span></div><div><b>26.3%</b><span>CTR</span></div><div><b>7.9</b><span>Avg. position</span></div></div>
+            <img loading="lazy" src="data/Screenshot%202026-11-27%208.08.17%20PM.png" alt="Search Console report showing 3.31 thousand clicks, 12.6 thousand impressions and 26.3 percent CTR">
+            <p class="proof-label">25 Sep – 25 Nov 2026. The property name is not visible in this screenshot, so it is not assigned to a specific website.</p>
+          </article>
+          <article class="proof-card reveal">
+            <h4>Additional Search Console snapshot</h4>
+            <div class="proof-metrics"><div><b>218</b><span>Clicks</span></div><div><b>1.35K</b><span>Impressions</span></div><div><b>16.2%</b><span>CTR</span></div><div><b>8.5</b><span>Avg. position</span></div></div>
+            <img loading="lazy" src="data/Screenshot%202026-11-27%208.10.27%20PM.png" alt="Search Console report showing 218 clicks, 1.35 thousand impressions and 16.2 percent CTR">
+            <p class="proof-label">21 – 25 Nov 2026. The property name is not visible in this screenshot, so it is not assigned to a specific website.</p>
+          </article>
+        </div>
+
+        <div class="earning-panel reveal">
+          <div class="earning-head"><div><div class="kicker">Monetag · Daily report</div><h3>Ad performance snapshot</h3><p>27 Oct – 27 Nov 2026 · Based on the uploaded CSV summary</p></div></div>
+          <div class="earning-metrics">
+            <div class="earning-metric"><span>Ad impressions</span><strong>613,353</strong></div>
+            <div class="earning-metric"><span>Reported profit</span><strong>$472.16</strong></div>
+            <div class="earning-metric"><span>Average CPM</span><strong>$0.77</strong></div>
+            <div class="earning-metric"><span>Best day</span><strong>$29.66</strong></div>
+          </div>
+          <div class="monetag-frame" aria-label="Privacy-safe Monetag daily statistics screenshot">
+            <img loading="lazy" src="data/Screenshot%202026-11-27%208.16.10%20PM.png" alt="Monetag daily impressions, profit and CPM table">
+            <span class="monetag-top-mask" aria-hidden="true"></span>
+            <span class="monetag-left-mask" aria-hidden="true"></span>
+          </div>
+          <p class="privacy-note">The screenshot is masked to hide its top account header and left navigation. The visible public figures come from the uploaded daily statistics CSV. No manager name, account balance, login details or payment information is shown.</p>
+          <a class="report-link" href="data/stats.csv" download>View daily statistics CSV ↓</a>
+        </div>
+        <p class="image-credits reveal">The uploaded Monetag CSV total is 613,353 impressions and $472.159 reported profit. The displayed values are rounded to two decimal places. Google AdSense approval is also part of my website experience.</p>
+      </div>
+    </section>
+
+    <section class="section section-white" id="certificates">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="kicker">03 / Certificates</div><h2>Learning that supports<br><span class="gradient-text">my work.</span></h2></div>
+          <p>Three course completion certificates covering AI basics, prompt engineering and SEO.</p>
+        </div>
+        <div class="cert-grid">
+          <article class="cert-card reveal">
+            <a class="cert-image" href="data/1746884924245.jpeg" target="_blank" rel="noopener"><img loading="lazy" src="data/1746884924245.jpeg" alt="HP LIFE certificate for AI for Beginners, awarded to Mohammad Ahsan"></a>
+            <div class="cert-copy"><div class="cert-provider">HP LIFE · HP Foundation</div><h3>AI for Beginners</h3><span class="cert-date">5 October 2025</span><p>An introduction to artificial intelligence, its real-world uses, data, business applications and ethical impact. This learning supports my work with AI-assisted content and video creation.</p></div>
+          </article>
+          <article class="cert-card reveal">
+            <a class="cert-image" href="data/1789883946042.jpeg" target="_blank" rel="noopener"><img loading="lazy" src="data/1789883946042.jpeg" alt="Simplilearn SkillUp certificate for Introduction to Prompt Engineering with GitHub Copilot"></a>
+            <div class="cert-copy"><div class="cert-provider">Simplilearn SkillUp · Microsoft course</div><h3>Introduction to Prompt Engineering with GitHub Copilot</h3><span class="cert-date">19 September 2026</span><p>A course in prompt engineering and AI-assisted coding with GitHub Copilot. It supports the way I write clear instructions and use AI tools during development. This is a course completion certificate.</p></div>
+          </article>
+          <article class="cert-card reveal">
+            <a class="cert-image" href="data/1790072481839.jpeg" target="_blank" rel="noopener"><img loading="lazy" src="data/1790072481839.jpeg" alt="Simplilearn SkillUp certificate for Introduction to SEO"></a>
+            <div class="cert-copy"><div class="cert-provider">Simplilearn SkillUp</div><h3>Introduction to SEO</h3><span class="cert-date">20 September 2026</span><p>A foundation in search engine optimization and improving website visibility. I use this knowledge while working on website structure, content and organic search performance.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="kicker">04 / Skills & tools</div><h2>What I can<br><span class="gradient-text">help you create.</span></h2></div>
+          <p>A mix of creative production, website building and AI-powered workflows.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill reveal"><div class="skill-icon">▶</div><h3>Video Creation</h3><p>Short videos, product ads and social media content.</p></article>
+          <article class="skill reveal"><div class="skill-icon">✦</div><h3>AI Product Ads</h3><p>AI visuals, UGC-style concepts and ad scripts.</p></article>
+          <article class="skill reveal"><div class="skill-icon">⌘</div><h3>Storytelling</h3><p>Stories, characters, dialogues and video prompts.</p></article>
+          <article class="skill reveal"><div class="skill-icon">⌂</div><h3>Website Development</h3><p>Responsive websites and browser game projects.</p></article>
+          <article class="skill reveal"><div class="skill-icon">⌕</div><h3>SEO</h3><p>Search visibility, content structure and performance.</p></article>
+          <article class="skill reveal"><div class="skill-icon">◎</div><h3>AI Workflows</h3><p>ChatGPT, Claude and AI-assisted creative work.</p></article>
+          <article class="skill reveal"><div class="skill-icon">GH</div><h3>GitHub</h3><p>Code, repositories and project collaboration.</p></article>
+          <article class="skill reveal"><div class="skill-icon">CF</div><h3>Cloudflare</h3><p>Website hosting and deployment workflows.</p></article>
+        </div>
+        <div class="video-note reveal" style="margin-top:17px"><div><strong>Website monetization experience</strong><br>Google AdSense approval and Monetag performance tracking for my web projects.</div><span class="video-status"><i class="status-dot"></i> Hands-on experience</span></div>
+      </div>
+    </section>
+
+    <section class="section section-white" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div><div class="kicker">05 / About me</div><h2>A creator who<br><span class="gradient-text">likes to build.</span></h2></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-stamp reveal"><div class="initials">MA.</div><h3>Mohammad Ahsan</h3><p>Professional Video Creator · Digital Builder</p></div>
+          <div class="about-copy reveal">
+            <p>I'm Mohammad Ahsan. I create professional videos, AI-powered product ads and story-based content. I enjoy turning ideas into clear, engaging visuals.</p>
+            <p>I also build and manage gaming websites, work on SEO and use tools like ChatGPT, Claude, GitHub and Cloudflare to bring digital projects to life.</p>
+            <p>My focus is simple: good ideas, clean design and work that makes a strong first impression.</p>
+            <div class="about-highlights"><span>Video Creator</span><span>AI Content</span><span>Website Builder</span><span>SEO</span><span>Storytelling</span><span>Digital Projects</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div><div class="kicker">06 / Contact</div><h2>Have a project in mind?<br>Let's work together.</h2><p>Need a product ad, a short video, a website or help with a digital project? Get in touch through my social profiles.</p></div>
+          <div class="contact-actions">
+            <a class="btn" href="https://github.com/developwithAhsan" target="_blank" rel="noopener">GitHub Profile ↗</a>
+            <a class="btn ghost" href="https://www.youtube.com/@RiyaKiKahaani/shorts" target="_blank" rel="noopener">YouTube Channel ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> Mohammad Ahsan. All rights reserved.</span>
+      <div class="footer-links"><a href="https://github.com/developwithAhsan" target="_blank" rel="noopener">GitHub</a><a href="https://www.youtube.com/@RiyaKiKahaani/shorts" target="_blank" rel="noopener">YouTube</a><a href="#home">Back to top ↑</a></div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var body = document.body;
+      var menuBtn = document.getElementById('menuBtn');
+      var navLinks = document.getElementById('navLinks');
+      if (menuBtn && navLinks) {
+        menuBtn.addEventListener('click', function () {
+          var open = navLinks.classList.toggle('open');
+          menuBtn.setAttribute('aria-expanded', String(open));
+          menuBtn.textContent = open ? '×' : '☰';
+        });
+        navLinks.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            navLinks.classList.remove('open');
+            menuBtn.setAttribute('aria-expanded', 'false');
+            menuBtn.textContent = '☰';
+          });
+        });
+      }
+
+      var line = document.getElementById('scrollLine');
+      function updateScroll() {
+        var max = document.documentElement.scrollHeight - window.innerHeight;
+        var value = max > 0 ? (window.scrollY / max) * 100 : 0;
+        if (line) line.style.width = value + '%';
+      }
+      window.addEventListener('scroll', updateScroll, { passive: true });
+      updateScroll();
+
+      if ('IntersectionObserver' in window) {
+        body.classList.add('js-motion');
+        var observer = new IntersectionObserver(function (entries, instance) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              instance.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -25px 0px' });
+        document.querySelectorAll('.reveal').forEach(function (item) { observer.observe(item); });
+        window.setTimeout(function () {
+          document.querySelectorAll('.reveal:not(.is-visible)').forEach(function (item) {
+            var r = item.getBoundingClientRect();
+            if (r.top < window.innerHeight + 40) item.classList.add('is-visible');
+          });
+        }, 1200);
+      }
+
+      var finePointer = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+      var dot = document.getElementById('cursorDot');
+      var ring = document.getElementById('cursorRing');
+      if (finePointer && dot && ring) {
+        body.classList.add('cursor-active');
+        window.addEventListener('mousemove', function (event) {
+          dot.style.left = event.clientX + 'px';
+          dot.style.top = event.clientY + 'px';
+          ring.style.left = event.clientX + 'px';
+          ring.style.top = event.clientY + 'px';
+        }, { passive: true });
+        document.querySelectorAll('a,button,.tilt-card').forEach(function (target) {
+          target.addEventListener('mouseenter', function () { ring.classList.add('hover'); });
+          target.addEventListener('mouseleave', function () { ring.classList.remove('hover'); });
+        });
+      }
+
+      if (finePointer) {
+        document.querySelectorAll('.tilt-card').forEach(function (card) {
+          card.addEventListener('mousemove', function (event) {
+            var rect = card.getBoundingClientRect();
+            var x = (event.clientX - rect.left) / rect.width - 0.5;
+            var y = (event.clientY - rect.top) / rect.height - 0.5;
+            card.style.transform = 'perspective(850px) rotateX(' + (-y * 3.5) + 'deg) rotateY(' + (x * 4) + 'deg) translateY(-3px)';
+          });
+          card.addEventListener('mouseleave', function () { card.style.transform = ''; });
+        });
+      }
+
+      var year = document.getElementById('year');
+      if (year) year.textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
