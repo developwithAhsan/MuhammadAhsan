@@ -1,23 +1,23 @@
 # Mohammad Ahsan — Developer & Digital Creator
 
-A premium responsive portfolio built with semantic HTML, custom CSS and vanilla JavaScript.
+A single-page responsive portfolio with a cinematic dark interface, cyan/violet accents, 3D particle orb, custom cursor, scroll animations, project gallery, website directory, analytics proof slider, monetization highlights, AI creative work, YouTube channel and certificate gallery.
 
-## Highlights
-- Cinematic dark interface with cyan / violet accents
-- Custom cursor, scroll progress and reveal animations
-- Interactive 3D particle orb powered by Three.js
-- Tilt-responsive project cards and mobile navigation
-- About, services, selected projects, AI creative work, YouTube, certificates and contact sections
-- Responsive layouts and reduced-motion support
+## Main page
+- `index.html` is the complete portfolio homepage.
+- All sections are on one page with anchor navigation.
 
-## Deploy
-Static site. Publish the repository root with Cloudflare Pages (no build command; output directory `/`).
+## Upload source material
+- Put unorganised source files in the `data/` folder.
+- Read `data/README.md` for the upload guide and privacy checklist.
+- Once files are uploaded, review them and move only safe, approved material into the live sections.
 
-## Details to finish
-- Add the two original certificate images and verified titles.
-- Add a verified Shorts gallery when actual video IDs and thumbnails are available.
-- Add a public contact email if desired. Client-owned advertisement work is intentionally not displayed without permission.
+## Current image filenames expected by the homepage
+- `data/search-console-short-window.webp`
+- `data/search-console-growth.webp`
+- `data/search-console-overview.webp`
+- `data/monetag-report-safe.webp`
+- `data/certificate-github-copilot.webp`
+- `data/certificate-hp-ai.webp`
+- `data/certificate-seo.webp`
 
-## Portfolio sections
-- Main portfolio: https://muhammad-ahsan-portfolio.pages.dev/
-- Digital footprint, website directory, search performance, monetization and certificates: https://muhammad-ahsan-portfolio.pages.dev/impact.html
+Static site; Cloudflare Pages can publish the repository root with no build command.
