@@ -17,3 +17,7 @@ Static site. Publish the repository root with Cloudflare Pages (no build command
 - Add the two original certificate images and verified titles.
 - Add a verified Shorts gallery when actual video IDs and thumbnails are available.
 - Add a public contact email if desired. Client-owned advertisement work is intentionally not displayed without permission.
+
+## Portfolio sections
+- Main portfolio: https://muhammad-ahsan-portfolio.pages.dev/
+- Digital footprint, website directory, search performance, monetization and certificates: https://muhammad-ahsan-portfolio.pages.dev/impact.html
