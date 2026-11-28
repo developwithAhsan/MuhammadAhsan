@@ -14,11 +14,11 @@ export async function onRequest(context) {
   }
 
   return new HTMLRewriter()
-    .on("#about .ab > img, #skills .ws > img", {
+    .on("#about .ab > img, #skills .ws > img, #contact .ct > img", {
       element(element) {
         const src = element.getAttribute("src") || "";
 
-        // These embedded image bytes are WebP (RIFF), not PNG.
+        // These embedded portrait bytes are WebP (RIFF), not PNG.
         if (src.startsWith("data:image/png;base64,UklGR")) {
           element.setAttribute(
             "src",
