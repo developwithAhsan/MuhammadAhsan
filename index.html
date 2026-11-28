@@ -214,6 +214,81 @@
     @media(max-width:720px){.ad-slots{grid-template-columns:1fr}.ad-slot-screen{height:150px}.ad-showcase-title,.channel-heading{display:block}.ad-coming-badge{display:inline-block;margin-top:12px}.channel-heading .btn{margin-top:14px}.shorts-grid{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:480px){.shorts-grid{grid-template-columns:1fr}.short-player{max-height:560px}.short-copy{padding:13px}.short-copy>a{font-size:10px}}
 
+  
+    /* New portfolio photo system */
+    body{background:radial-gradient(ellipse at 7% 9%,rgba(96,153,226,.12),transparent 26%),radial-gradient(ellipse at 92% 38%,rgba(105,91,196,.08),transparent 28%),linear-gradient(180deg,#f7f9fd 0%,#f2f6fb 48%,#f8faff 100%)}
+    .hero{background:radial-gradient(ellipse at 82% 22%,rgba(119,164,229,.32),transparent 36%),radial-gradient(ellipse at 12% 88%,rgba(77,190,183,.19),transparent 34%),linear-gradient(135deg,#f9fbff 0%,#edf3fb 55%,#f8f5ff 100%)}
+    .hero-photo-scene{height:500px;position:relative;display:grid;place-items:center;isolation:isolate}
+    .hero-photo-glow{position:absolute;width:82%;height:84%;border-radius:48%;background:linear-gradient(135deg,#b6d5fb,#c5eee9 55%,#d9d1fa);filter:blur(35px);opacity:.8;z-index:-1;animation:photoGlow 8s ease-in-out infinite alternate}
+    .hero-photo-frame{position:relative;width:min(100%,390px);height:460px;border:8px solid rgba(255,255,255,.88);border-radius:190px 190px 34px 34px;overflow:hidden;box-shadow:0 30px 80px rgba(31,68,116,.2),0 0 0 1px rgba(55,113,180,.13);transform:rotate(1deg);animation:portraitFloat 7s ease-in-out infinite}
+    .hero-photo-frame img{width:100%;height:100%;object-fit:cover;object-position:center 30%;transition:transform .8s ease}
+    .hero-photo-scene:hover .hero-photo-frame img{transform:scale(1.045)}
+    .hero-photo-shade{position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(9,25,48,.86))}
+    .hero-photo-caption{position:absolute;left:25px;right:25px;bottom:23px;color:#fff;display:flex;flex-direction:column;gap:3px;text-shadow:0 2px 12px #08172b}
+    .hero-photo-caption span{font-size:9px;letter-spacing:1.8px;font-weight:900;color:#c9e8ff}
+    .hero-photo-caption b{font-size:23px;letter-spacing:-.7px}
+    .hero-photo-caption small{font-size:11px;color:#e0ebf8}
+    .photo-float{position:absolute;z-index:2;padding:12px 16px;border:1px solid rgba(255,255,255,.9);border-radius:13px;background:rgba(255,255,255,.9);box-shadow:0 14px 34px rgba(33,69,115,.13);backdrop-filter:blur(12px);font-size:10px;font-weight:900;letter-spacing:.9px;color:#51647e;animation:float 5.5s ease-in-out infinite}
+    .photo-float b{color:#2469c8;margin-right:6px}
+    .photo-float-one{left:-4px;top:75px}
+    .photo-float-two{right:-2px;top:185px;animation-delay:-2s}
+    .photo-float-three{left:5px;bottom:54px;animation-delay:-3s}
+    @keyframes portraitFloat{50%{transform:translateY(-10px) rotate(-1deg)}}
+    @keyframes photoGlow{to{transform:scale(1.09) rotate(8deg);opacity:.58}}
+    .creative-photo-band{display:grid;grid-template-columns:.82fr 1.18fr;align-items:center;gap:30px;margin:8px 0 38px;padding:20px;border:1px solid rgba(207,222,241,.9);border-radius:24px;background:linear-gradient(120deg,rgba(255,255,255,.94),rgba(239,246,255,.92));box-shadow:0 18px 48px rgba(32,66,108,.08);overflow:hidden}
+    .creative-photo-frame{height:250px;border-radius:17px;overflow:hidden;position:relative;background:linear-gradient(135deg,#dceaff,#dff4f0)}
+    .creative-photo-frame:after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(33,102,184,.06),rgba(72,146,162,.12));pointer-events:none}
+    .creative-photo-frame img{width:100%;height:100%;object-fit:cover;object-position:center 35%;transition:transform .7s}
+    .creative-photo-band:hover .creative-photo-frame img{transform:scale(1.04)}
+    .creative-photo-copy{padding:12px 22px 12px 0}
+    .creative-photo-copy h3{font-size:clamp(24px,3vw,36px);line-height:1.1;letter-spacing:-1.3px;margin:12px 0}
+    .creative-photo-copy p{max-width:540px;color:var(--muted);font-size:13px;line-height:1.85;margin:0}
+    .mini-tags,.tool-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+    .mini-tags i,.tool-tags span{font-style:normal;padding:7px 10px;border-radius:999px;background:#edf4ff;border:1px solid #dce8f7;color:#52719b;font-size:9px;font-weight:850}
+    .skills-section{background:radial-gradient(ellipse at 80% 8%,rgba(121,169,230,.16),transparent 32%),linear-gradient(180deg,#eef4fb,#f8faff 55%,#eef5fa)}
+    .skills-intro{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px;align-items:center;padding:20px;border:1px solid #dce7f4;border-radius:24px;background:rgba(255,255,255,.8);box-shadow:0 17px 48px rgba(32,66,108,.075);margin-bottom:50px}
+    .skills-intro-photo{height:340px;border-radius:18px;overflow:hidden;position:relative;background:linear-gradient(135deg,#d7e8fb,#daf2ef)}
+    .skills-intro-photo:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(10,28,50,.63))}
+    .skills-intro-photo img{width:100%;height:100%;object-fit:cover;object-position:center 32%;transition:transform .8s}
+    .skills-intro:hover .skills-intro-photo img{transform:scale(1.035)}
+    .workspace-chip{position:absolute;z-index:1;left:17px;bottom:16px;color:#fff;font-size:9px;font-weight:900;letter-spacing:1.4px}
+    .skills-intro-copy{padding:12px 20px 12px 0}
+    .skills-intro-copy h3{margin:12px 0;font-size:clamp(25px,3vw,37px);line-height:1.12;letter-spacing:-1.4px}
+    .skills-intro-copy p{font-size:12px;line-height:1.9;color:var(--muted);margin:0 0 10px}
+    .tool-tags{margin-top:17px}
+    .skills-category-head{margin:44px 0 18px}
+    .skills-category-head h3{font-size:25px;letter-spacing:-.9px;margin:5px 0}
+    .skills-category-head p{margin:0;color:var(--muted);font-size:12px}
+    .expanded-skills{grid-template-columns:repeat(3,1fr);gap:13px}
+    .expanded-skills .skill{min-height:155px;padding:21px;background:rgba(255,255,255,.88);border-color:#dfe8f2;box-shadow:0 10px 30px rgba(35,65,105,.045)}
+    .expanded-skills .skill:hover{transform:translateY(-6px);border-color:#a8c6ec;box-shadow:0 17px 38px rgba(37,87,145,.11)}
+    .expanded-skills .skill h3{font-size:14px}
+    .expanded-skills .skill p{font-size:11px;line-height:1.8}
+    .skills-note{margin-top:30px;padding:21px 24px;border:1px solid #dce8f4;border-radius:17px;background:linear-gradient(110deg,#fff,#edf5ff);box-shadow:0 12px 30px rgba(35,65,105,.05)}
+    .skills-note strong{font-size:14px}
+    .skills-note p{margin:5px 0 0;color:var(--muted);font-size:12px;line-height:1.8}
+    .about-photo-card{position:relative;min-height:390px;border-radius:24px;overflow:hidden;box-shadow:0 20px 52px rgba(31,67,113,.16);background:linear-gradient(135deg,#dceaff,#e3f5f1)}
+    .about-photo-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;transition:transform .8s}
+    .about-photo-card:hover img{transform:scale(1.035)}
+    .about-photo-label{position:absolute;left:0;right:0;bottom:0;padding:44px 24px 22px;color:white;display:flex;flex-direction:column;gap:4px;background:linear-gradient(transparent,rgba(9,25,48,.88))}
+    .about-photo-label b{font-size:22px;letter-spacing:-.7px}
+    .about-photo-label span{font-size:10px;color:#d8e7f7}
+    .about-grid{grid-template-columns:.82fr 1.18fr;gap:38px}
+    .contact-card-photo{display:grid;grid-template-columns:.72fr 1.28fr;gap:30px;align-items:stretch;background:linear-gradient(120deg,#153d70,#175d88 58%,#216f88);overflow:hidden;padding:21px}
+    .contact-photo{min-height:285px;border-radius:16px;overflow:hidden;position:relative;background:#1e527c}
+    .contact-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,25,47,.24),rgba(8,25,47,.04))}
+    .contact-photo img{width:100%;height:100%;min-height:285px;position:absolute;inset:0;object-fit:cover;object-position:center 30%;transition:transform .7s}
+    .contact-card-photo:hover .contact-photo img{transform:scale(1.04)}
+    .contact-copy{padding:15px 18px 15px 0}
+    .contact-copy h2{font-size:clamp(28px,4vw,43px)}
+    .contact-copy p{max-width:560px}
+    .contact-copy .contact-actions{flex-direction:row;flex-wrap:wrap;margin-top:20px}
+    .contact-copy .contact-actions .btn{min-width:160px}
+    @media(max-width:950px){.hero-photo-scene{height:430px}.hero-photo-frame{height:400px;max-width:340px}.expanded-skills{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:720px){.hero-photo-scene{height:390px;max-width:520px;width:100%;margin:0 auto}.hero-photo-frame{height:360px;width:min(78%,320px)}.creative-photo-band{grid-template-columns:1fr;gap:16px}.creative-photo-frame{height:250px}.creative-photo-copy{padding:3px 5px 8px}.skills-intro{grid-template-columns:1fr;gap:18px}.skills-intro-photo{height:280px}.skills-intro-copy{padding:5px 6px 8px}.expanded-skills{grid-template-columns:1fr 1fr}.about-grid{grid-template-columns:1fr}.about-photo-card{min-height:380px;max-width:520px;width:100%}.contact-card-photo{grid-template-columns:1fr;gap:16px}.contact-photo{min-height:250px}.contact-photo img{min-height:250px}.contact-copy{padding:8px 6px 8px}.contact-copy .contact-actions{margin-top:18px}}
+    @media(max-width:480px){.hero-photo-scene{height:335px}.hero-photo-frame{height:315px;width:min(76%,275px);border-width:6px}.photo-float{font-size:8px;padding:9px 11px}.photo-float-one{left:0;top:46px}.photo-float-two{right:0;top:145px}.photo-float-three{left:0;bottom:25px}.hero-photo-caption b{font-size:19px}.creative-photo-frame{height:220px}.skills-intro-photo{height:230px}.expanded-skills{grid-template-columns:1fr}.expanded-skills .skill{min-height:0}.about-photo-card{min-height:330px}.contact-photo{min-height:220px}.contact-photo img{min-height:220px}}
+    @media(prefers-reduced-motion:reduce){.hero-photo-frame,.hero-photo-glow,.photo-float{animation:none!important}.hero-photo-scene:hover .hero-photo-frame img,.creative-photo-band:hover .creative-photo-frame img,.skills-intro:hover .skills-intro-photo img,.about-photo-card:hover img,.contact-card-photo:hover .contact-photo img{transform:none!important}}
+
   </style>
 </head>
 <body>
@@ -257,15 +332,16 @@
             <div class="hero-fact"><b>SEO</b><span>Organic Growth</span></div>
           </div>
         </div>
-        <div class="hero-art reveal" aria-label="Animated creative technology illustration">
-          <div class="art-glow"></div>
-          <div class="art-platform">
-            <div class="platform-ring"></div>
-            <div class="platform-card"><div class="play-symbol">▶</div></div>
+        <div class="hero-photo-scene reveal" aria-label="Portfolio portrait">
+          <div class="hero-photo-glow"></div>
+          <div class="hero-photo-frame">
+            <img src="data/1.png" alt="Muhammad Ahsan — featured portfolio photo" fetchpriority="high" decoding="async">
+            <div class="hero-photo-shade"></div>
+            <div class="hero-photo-caption"><span>CREATIVE MIND</span><b>Muhammad Ahsan</b><small>Video · Web · Digital Growth</small></div>
           </div>
-          <div class="art-chip chip-one"><b>01</b> CREATE</div>
-          <div class="art-chip chip-two"><b>02</b> BUILD</div>
-          <div class="art-chip chip-three"><b>03</b> GROW</div>
+          <div class="photo-float photo-float-one"><b>01</b> CREATE</div>
+          <div class="photo-float photo-float-two"><b>02</b> BUILD</div>
+          <div class="photo-float photo-float-three"><b>03</b> GROW</div>
         </div>
       </div>
     </section>
@@ -275,6 +351,10 @@
         <div class="section-head reveal">
           <div><div class="kicker">01 / Content creation</div><h2>AI product ads.<br><span class="gradient-text">Short videos & stories.</span></h2></div>
           <p>I create AI-powered product ads, UGC-style videos and short-form stories. Explore all six selected YouTube Shorts below.</p>
+        </div>
+        <div class="creative-photo-band reveal">
+          <div class="creative-photo-frame"><img src="data/2.png" alt="Portfolio photo from Muhammad Ahsan's creative work" loading="lazy" decoding="async"></div>
+          <div class="creative-photo-copy"><span class="kicker">IDEAS INTO CONTENT</span><h3>Creative work with a clear purpose.</h3><p>From a simple idea to a finished video, I plan the message, shape the visuals and prepare content for the right audience.</p><span class="mini-tags"><i>AI video</i><i>Storytelling</i><i>Social content</i></span></div>
         </div>
         <div class="ad-showcase-title reveal">
           <div><div class="kicker">Featured ad work</div><h3>AI Product Advertisements</h3><p>Three spaces are reserved for my upcoming product-ad videos.</p></div>
@@ -412,25 +492,59 @@
       </div>
     </section>
 
-    <section class="section section-soft" id="skills">
+    <section class="section skills-section" id="skills">
       <div class="container">
         <div class="section-head reveal">
-          <div><div class="kicker">04 / Skills & tools</div><h2>What I can<br><span class="gradient-text">help you create.</span></h2></div>
-          <p>Creative production, AI video tools, website building and digital workflows.</p>
+          <div><div class="kicker">04 / Skills & creative workflow</div><h2>Many skills.<br><span class="gradient-text">One creative mindset.</span></h2></div>
+          <p>I use AI tools, creative thinking and hands-on project work to make videos, build websites and grow digital platforms. These are the skills I practise across my own projects.</p>
         </div>
-        <div class="skills-grid">
-          <article class="skill reveal"><div class="skill-icon">▶</div><h3>Video Creation</h3><p>Short videos, product ads and social media content.</p></article>
-          <article class="skill reveal"><div class="skill-icon">✦</div><h3>AI Product Ads</h3><p>AI visuals, UGC-style concepts and ad scripts.</p></article>
-          <article class="skill reveal"><div class="skill-icon">⌘</div><h3>Storytelling</h3><p>Stories, characters, dialogues and video prompts.</p></article>
-          <article class="skill reveal"><div class="skill-icon">⌂</div><h3>Website Development</h3><p>Responsive websites and browser game projects.</p></article>
-          <article class="skill reveal"><div class="skill-icon">⌕</div><h3>SEO</h3><p>Search visibility, content structure and performance.</p></article>
-          <article class="skill reveal"><div class="skill-icon">◎</div><h3>ChatGPT & Claude</h3><p>AI-assisted research, writing, planning and creative workflows.</p></article>
-          <article class="skill reveal"><div class="skill-icon">▶</div><h3>Google Flow & Veo 3</h3><p>AI video generation, cinematic scenes and professional product-ad concepts.</p></article>
-          <article class="skill reveal"><div class="skill-icon">✦</div><h3>OmniFlash Models</h3><p>OmniFlash, OmniFlash 2.1 and OmniFlash 1.1 for creative video workflows.</p></article>
-          <article class="skill reveal"><div class="skill-icon">GH</div><h3>GitHub</h3><p>Code, repositories and project collaboration.</p></article>
-          <article class="skill reveal"><div class="skill-icon">CF</div><h3>Cloudflare</h3><p>Website hosting and deployment workflows.</p></article>
+        <div class="skills-intro reveal">
+          <div class="skills-intro-photo"><img src="data/3.png" alt="Muhammad Ahsan's creative workspace photo" loading="lazy" decoding="async"><span class="workspace-chip">MY CREATIVE WORKFLOW</span></div>
+          <div class="skills-intro-copy">
+            <span class="kicker">THINK · CREATE · BUILD · IMPROVE</span>
+            <h3>From an idea to a live digital project.</h3>
+            <p>I work across video creation, AI-assisted coding, website management, search optimization and online content. I use my laptop and a mix of creative and technical tools to plan, build, publish and improve projects.</p>
+            <p>I enjoy learning by making real things: a website, a short video, a story, a campaign or a better search experience.</p>
+            <div class="tool-tags"><span>ChatGPT</span><span>Claude</span><span>Google Flow</span><span>Veo 3</span><span>OmniFlash</span><span>GitHub</span><span>Cloudflare</span></div>
+          </div>
         </div>
-        <div class="video-note reveal" style="margin-top:17px"><div><strong>Website monetization experience</strong><br>Google AdSense approval and Monetag performance tracking for my web projects.</div><span class="video-status"><i class="status-dot"></i> Hands-on experience</span></div>
+        <div class="skills-category-head reveal"><span class="kicker">01 / DIGITAL & WEB</span><h3>Websites, coding and SEO</h3><p>Building online projects and helping people find them through search.</p></div>
+        <div class="skills-grid expanded-skills">
+          <article class="skill reveal"><div class="skill-icon">⌘</div><h3>AI-Assisted Coding</h3><p>Using AI tools to understand code, write website features, fix errors and improve existing projects.</p></article>
+          <article class="skill reveal"><div class="skill-icon">⌂</div><h3>Website Design</h3><p>Planning clean layouts, responsive pages, useful sections and simple user experiences for desktop and mobile.</p></article>
+          <article class="skill reveal"><div class="skill-icon">⌘</div><h3>Website Development</h3><p>Building and updating HTML, CSS and JavaScript websites, then testing their main features.</p></article>
+          <article class="skill reveal"><div class="skill-icon">☁</div><h3>Hosting & Deployment</h3><p>Working with GitHub and Cloudflare to manage code, publish updates and keep web projects online.</p></article>
+          <article class="skill reveal"><div class="skill-icon">⌕</div><h3>Google SEO</h3><p>Improving page content, titles, headings, internal links and website structure for better search visibility.</p></article>
+          <article class="skill reveal"><div class="skill-icon">↗</div><h3>Technical SEO</h3><p>Working on indexing, crawl access, sitemaps, robots rules, page speed and common website SEO checks.</p></article>
+          <article class="skill reveal"><div class="skill-icon">◎</div><h3>Search Console</h3><p>Reading clicks, impressions, CTR and average position to understand how websites perform in Google Search.</p></article>
+          <article class="skill reveal"><div class="skill-icon">⌁</div><h3>Keyword Research</h3><p>Finding useful search phrases, understanding what people want and planning pages around search intent.</p></article>
+          <article class="skill reveal"><div class="skill-icon">▣</div><h3>Browser Game Projects</h3><p>Building and managing browser-based gaming websites, game pages, loaders and player experiences.</p></article>
+        </div>
+        <div class="skills-category-head reveal"><span class="kicker">02 / VIDEO & AI CREATION</span><h3>Videos, ads and visual storytelling</h3><p>Turning ideas and scripts into short videos and engaging visual content.</p></div>
+        <div class="skills-grid expanded-skills">
+          <article class="skill reveal"><div class="skill-icon">▶</div><h3>AI Video Generation</h3><p>Creating video scenes with AI tools, detailed prompts, shot ideas, camera direction and visual references.</p></article>
+          <article class="skill reveal"><div class="skill-icon">✦</div><h3>Product Advertisement</h3><p>Developing product-ad concepts, UGC-style ideas, hooks, scripts and visual plans for campaigns.</p></article>
+          <article class="skill reveal"><div class="skill-icon">✎</div><h3>Prompt Engineering</h3><p>Writing clear instructions for AI image, video, writing and coding tools to get more consistent results.</p></article>
+          <article class="skill reveal"><div class="skill-icon">◉</div><h3>Video Direction</h3><p>Planning scenes, framing, lighting, actions and transitions to make videos feel clear and cinematic.</p></article>
+          <article class="skill reveal"><div class="skill-icon">Aa</div><h3>Scriptwriting</h3><p>Writing simple scripts, dialogues, hooks and scene-by-scene plans for short-form videos.</p></article>
+          <article class="skill reveal"><div class="skill-icon">◇</div><h3>AI Creative Tools</h3><p>Using ChatGPT, Claude, Google Flow, Veo 3 and OmniFlash models in creative production workflows.</p></article>
+        </div>
+        <div class="skills-category-head reveal"><span class="kicker">03 / CONTENT & MARKETING</span><h3>Stories, YouTube and social media</h3><p>Making content with a clear idea, audience and publishing plan.</p></div>
+        <div class="skills-grid expanded-skills">
+          <article class="skill reveal"><div class="skill-icon">✧</div><h3>Story Writing</h3><p>Creating story ideas, characters, plots, scenes and dialogue for short and long-form content.</p></article>
+          <article class="skill reveal"><div class="skill-icon">▶</div><h3>YouTube Automation</h3><p>Planning channel content, organising video ideas, preparing scripts and building a repeatable publishing workflow.</p></article>
+          <article class="skill reveal"><div class="skill-icon">▤</div><h3>Short-Form Content</h3><p>Creating YouTube Shorts and social videos with strong openings, simple storytelling and clear pacing.</p></article>
+          <article class="skill reveal"><div class="skill-icon">◎</div><h3>Social Media Marketing</h3><p>Planning posts and campaigns, choosing content themes and helping a brand stay active online.</p></article>
+          <article class="skill reveal"><div class="skill-icon">▧</div><h3>Content Strategy</h3><p>Organising ideas into content plans that match a channel, audience, topic and publishing goal.</p></article>
+          <article class="skill reveal"><div class="skill-icon">⌁</div><h3>Creative Research</h3><p>Researching topics, reviewing trends and collecting useful references before creating content.</p></article>
+        </div>
+        <div class="skills-category-head reveal"><span class="kicker">04 / ANALYTICS & ONLINE GROWTH</span><h3>Performance and monetization</h3><p>Using real project data to understand reach, traffic and website revenue.</p></div>
+        <div class="skills-grid expanded-skills">
+          <article class="skill reveal"><div class="skill-icon">$</div><h3>Website Monetization</h3><p>Hands-on experience with Google AdSense approval and Monetag ad setup for website projects.</p></article>
+          <article class="skill reveal"><div class="skill-icon">▥</div><h3>Traffic Analysis</h3><p>Reviewing website traffic, search reports, impressions, clicks and campaign performance.</p></article>
+          <article class="skill reveal"><div class="skill-icon">↗</div><h3>Growth Improvement</h3><p>Finding areas to improve in content, website experience, search visibility and digital publishing.</p></article>
+        </div>
+        <div class="skills-note reveal"><strong>How I work</strong><p>I combine creative ideas with practical tools. I am always learning, testing and improving my skills through real projects.</p></div>
       </div>
     </section>
 
@@ -440,7 +554,7 @@
           <div><div class="kicker">05 / About me</div><h2>A creator who<br><span class="gradient-text">likes to build.</span></h2></div>
         </div>
         <div class="about-grid">
-          <div class="about-stamp reveal"><div class="initials">MA.</div><h3>Muhammad Ahsan</h3><p>Professional Video Creator · Digital Builder</p></div>
+          <div class="about-photo-card reveal"><img src="data/4.png" alt="Muhammad Ahsan — personal portfolio photo" loading="lazy" decoding="async"><div class="about-photo-label"><b>Muhammad Ahsan</b><span>Professional Video Creator · Digital Builder</span></div></div>
           <div class="about-copy reveal">
             <p>I'm Muhammad Ahsan. I create professional videos, AI-powered product ads and story-based content. I enjoy turning ideas into clear, engaging visuals.</p>
             <p>I also build and manage gaming websites, work on SEO and use tools like ChatGPT, Claude, GitHub and Cloudflare to bring digital projects to life.</p>
@@ -453,11 +567,13 @@
 
     <section class="section section-soft" id="contact">
       <div class="container">
-        <div class="contact-card reveal">
-          <div><div class="kicker">06 / Contact</div><h2>Have a project in mind?<br>Let's work together.</h2><p>Need a product ad, a short video, a website or help with a digital project? Get in touch through my social profiles.</p></div>
-          <div class="contact-actions">
-            <a class="btn" href="https://github.com/developwithAhsan" target="_blank" rel="noopener">GitHub Profile ↗</a>
-            <a class="btn ghost" href="https://www.youtube.com/@RiyaKiKahaani/shorts" target="_blank" rel="noopener">YouTube Channel ↗</a>
+        <div class="contact-card reveal contact-card-photo">
+          <div class="contact-photo"><img src="data/5.png" alt="Portfolio photo for the contact section" loading="lazy" decoding="async"></div>
+          <div class="contact-copy"><div class="kicker">06 / Contact</div><h2>Have a project in mind?<br>Let's work together.</h2><p>Need a product ad, a short video, a website or help with a digital project? Send a message through my social profiles.</p>
+            <div class="contact-actions">
+              <a class="btn" href="https://github.com/developwithAhsan" target="_blank" rel="noopener">GitHub Profile ↗</a>
+              <a class="btn ghost" href="https://www.youtube.com/@RiyaKiKahaani/shorts" target="_blank" rel="noopener">YouTube Channel ↗</a>
+            </div>
           </div>
         </div>
       </div>
